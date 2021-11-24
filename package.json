@@ -19,6 +19,7 @@
     "nuxt-seo": "^1.5.0"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "postcss": "^8.3.5",
     "postcss-nested": "^5.0.6"
