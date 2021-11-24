@@ -1,0 +1,113 @@
+.article,
+.content {
+  a {
+    @apply font-semibold underline;
+  }
+
+  h1 {
+    @apply font-bold leading-none uppercase font-display;
+    margin-bottom: 1em;
+
+    font-size: min(max(3rem, 5.25vw), 6rem);
+    @supports (font-size: clamp(3rem, 5.25vw, 7rem)) {
+      font-size: clamp(3rem, 5.25vw, 7rem);
+    }
+  }
+
+  h2 {
+    @apply py-6 mt-12 text-4xl font-bold leading-none tracking-tight;
+  }
+
+  h3 {
+    @apply py-6 text-xl font-bold leading-none;
+  }
+
+  h4 {
+    @apply py-6 font-bold leading-none tracking-widest uppercase;
+  }
+
+  p {
+    @apply text-lg leading-relaxed mb-8;
+  }
+  > p:first-of-type {
+    @apply text-2xl;
+  }
+  > blockquote {
+    @apply px-4 pt-6 mb-12 text-3xl italic font-bold leading-tight text-center;
+  }
+
+  > blockquote > p {
+    @apply text-3xl leading-tight;
+  }
+
+  > p > img,
+  > img {
+    @apply mx-auto my-10;
+  }
+  hr {
+    /* @apply my-3 text-indigo-500; */
+    @apply w-2/3 h-px mx-auto my-20 transform bg-indigo-500 md:w-2/3 rotate-1 text-indigo-500;
+  }
+
+  /* a {
+    @apply font-bold text-indigo-500 underline;
+    &:hover {
+      @apply text-hot-pink;
+    }
+  } */
+
+  ul:not(.list-none) {
+    @apply pl-0 mb-8 ml-10 text-lg list-disc;
+    li {
+      @apply mb-1;
+    }
+  }
+
+  ol {
+    @apply pl-0 mb-8 ml-10 text-lg list-decimal;
+    li {
+      @apply mb-1;
+    }
+  }
+
+  p code,
+  ul li *:not(pre) code,
+  ul li > code,
+  ol li *:not(pre) code,
+  ol li > code {
+    @apply inline-block p-1 font-mono text-sm leading-none text-white align-baseline whitespace-nowrap;
+  }
+
+  pre,
+  pre&,
+  > ul li pre,
+  > ol li pre {
+    @apply flex p-0 mb-8 text-sm leading-loose;
+  }
+
+  pre code,
+  pre code&,
+  > ul li pre code,
+  > ol li pre code {
+    @apply p-4;
+  }
+
+  table {
+    @apply w-full mb-8 text-sm text-left border-2 border-collapse;
+    th {
+      @apply p-4 text-xl font-bold border-t-4 border-b;
+    }
+
+    td {
+      @apply p-4 border-b;
+    }
+
+    p {
+      @apply leading-normal;
+    }
+  }
+}
+
+.content section > *:first-child {
+  @apply pt-0 mt-0;
+}

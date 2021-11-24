@@ -1,0 +1,46 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine on
+
+    # force https in the browser (but not on localhost)
+    RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+    RewriteCond %{REMOTE_ADDR} !^::1
+    RewriteCond %{REMOTE_HOST} !^127\.0\.0\.1
+    RewriteCond %{REMOTE_HOST} !^localhost
+    RewriteCond %{HTTPS} off 
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Whitelist IP addresses for staging
+    #RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+    #RewriteCond %{REMOTE_ADDR} !^::1
+    #RewriteCond %{REMOTE_HOST} !^127\.0\.0\.1
+    #RewriteRule .* - [F]
+    
+#############################################################
+    # Begin custom rewrites for the app #
+#############################################################
+
+    # bookmark go link
+    # RewriteRule ^go/(.*)/(.*)/?$ ./go.php?id=$1&token=$2 [NC]
+
+#############################################################
+
+    # hide .php extensions
+    RewriteCond %{REQUEST_URI} !/$
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.*) $1\.php [L]
+    
+    # hide .html extensions
+    RewriteCond %{REQUEST_URI} !/$
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.*) $1\.html [L]
+
+</IfModule>

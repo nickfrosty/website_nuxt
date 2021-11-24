@@ -1,0 +1,47 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply text-white bg-gray-900;
+}
+
+/* Define the custom component styles for use on the site */
+.underline {
+  text-decoration-color: rgba(99, 102, 241, 1) !important;
+  text-decoration: underline;
+}
+
+/* Define custom tailwind components */
+.link,
+article a {
+  @apply text-indigo-500 hover:underline hover:text-hot-pink;
+  @apply group-hover:underline group-hover:text-hot-pink;
+}
+
+.container {
+  @apply md:max-w-6xl md:mx-auto;
+}
+
+.btn,
+.button {
+  @apply px-5 py-2 font-semibold leading-normal transition rounded-lg appearance-none focus:outline-none focus:border-gray-400;
+}
+
+.input {
+  @apply block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-white border border-gray-200 rounded appearance-none focus:outline-none focus:border-gray-400 focus:shadow-md;
+}
+
+/* Common blog post componenets */
+.tag-simple {
+  @apply relative text-xs font-medium text-gray-900;
+}
+.tag {
+  @apply relative px-3 py-1 text-xs font-medium rounded-full text-gray-900;
+}
+.tag.green {
+  @apply hover:bg-green-200;
+}
+.tag.indigo {
+  @apply hover:bg-indigo-400 hover:text-white;
+}
