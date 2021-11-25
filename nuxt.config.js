@@ -40,6 +40,7 @@ export default {
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 	plugins: [
+		'~/plugins/gtag.js',
 		'~/plugins/utils.js',
 		// '~/plugins/fontawesome.js',
 		{ src: '~/plugins/nprogress.js', mode: 'client' },
@@ -56,7 +57,6 @@ export default {
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
-		'@nuxtjs/google-analytics',
 		// https://go.nuxtjs.dev/axios
 		'@nuxtjs/axios',
 		// https://go.nuxtjs.dev/content
@@ -64,13 +64,43 @@ export default {
 		'@nuxt/image',
 		'nuxt-seo',
 		// '~/modules/nuxt-meta',
-		// '@nuxt/sitemap',
+		'@nuxtjs/sitemap',
 	],
 	
-	// sitemap: {
-	// 	hostname: process.env.HOST_NAME,
-	// 	routes: [] // all the dynamic routes
-	// },
+	sitemap: {
+		hostname: 'https://frostbutter.com',
+		gzip: true,
+		exclude: [
+			'/newsletter/**',
+		],
+		// path: 'sitemap.xml',
+		cacheTime: 1000 * 60 * 60 * 24,
+		trailingSlash: true,
+		// exclude: ['/**'], 
+		routes: async () => {
+			const { $content } = require('@nuxt/content');
+			let routes = [];
+			let posts, options;
+
+			// load the 'blog' posts
+			options = { contentFolder: 'blog', };
+			posts = await $content(options.contentFolder, { deep: true })
+			.where({ published: true }).sortBy("createdAt", "desc").fetch();
+			for (const post of posts) {
+				routes.push(`${options.pathPrefix || options.contentFolder}/${post.slug}`);
+			}
+
+			// load the 'articles'
+			options = { contentFolder: 'articles', };
+			posts = await $content(options.contentFolder, { deep: true })
+			.where({ published: true }).sortBy("createdAt", "desc").fetch();
+			for (const post of posts) {
+				routes.push(`${options.pathPrefix || options.contentFolder}/${post.slug}`);
+			}
+			
+			return routes;
+		},
+	},
 
 	seo: {
 		// Module options
