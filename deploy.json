@@ -1,0 +1,4 @@
+{
+  "repo": "git@github.com:nickfrosty/frostbutter",
+  "steps": [{ "cmd": "npm install" }, { "cmd": "npm run generate" }]
+}
