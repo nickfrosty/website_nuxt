@@ -37,13 +37,13 @@ npm install
 
 # Generate static site
 npm run generate
-mv -R -f ./dist/* ./public_html/
+mv -f ./dist/ ./public_html/
 
 # Build for production (using pm2/node)
 # npm run build
 # pm2 restart $APP_NAME
 
-###   ###
+### Finishing work ###
 
 # force the deploy script to be executable
 chmod +x deploy.sh
