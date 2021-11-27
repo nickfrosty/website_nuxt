@@ -24,10 +24,12 @@ fi
 set -x
 
 # Pull latest code
-if [[ -e $APP_DIR ]]; then
+if [[ -d $APP_DIR/.stage ]]; then
+  cd $APP_DIR/.stage
   git pull
 else
-  git clone $GIT_URL $APP_DIR
+  git clone $GIT_URL $APP_DIR/.stage
+  cd $APP_DIR/.stage
 fi
 
 # Install dependencies
@@ -37,7 +39,7 @@ npm install
 
 # Generate static site
 npm run generate
-mv -f ./dist/ ./public_html/
+mv -f ./dist/ $APP_DIR/public_html/
 
 # Build for production (using pm2/node)
 # npm run build
@@ -46,4 +48,5 @@ mv -f ./dist/ ./public_html/
 ### Finishing work ###
 
 # force the deploy script to be executable
-chmod +x deploy.sh
+cp ./deploy.sh $APP_DIR/
+chmod +x $APP_DIR/deploy.sh
