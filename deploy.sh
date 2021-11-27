@@ -24,10 +24,10 @@ fi
 set -x
 
 # Pull latest code
-if [[ -e $APP_DIR/.stage ]]; then
+if [[ -e $APP_DIR ]]; then
   git pull
 else
-  git clone $GIT_URL $APP_DIR/.stage
+  git clone $GIT_URL $APP_DIR
 fi
 
 # Install dependencies
