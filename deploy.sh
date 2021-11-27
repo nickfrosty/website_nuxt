@@ -39,7 +39,7 @@ npm install
 
 # Generate static site
 npm run generate
-mv -f ./dist/ $APP_DIR/public_html/
+cp -r -f ./dist/* $APP_DIR/public_html/
 
 # Build for production (using pm2/node)
 # npm run build
