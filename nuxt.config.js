@@ -183,6 +183,7 @@ export default {
 		'@nuxt/content',
 		'@nuxtjs/axios',
 		'@nuxt/image',
+		'@nuxtjs/markdownit',
 		'@nuxtjs/feed',
 		'@nuxtjs/sitemap',
 	],
@@ -311,10 +312,24 @@ export default {
 	hooks: {
 		// format the 'content' markdown posts for the RSS feeds 
 		'content:file:beforeInsert': (document) => {
-			if (document.extension === '.md') {
-				document.bodyPlainText = document.text;
+			// eslint-disable-next-line
+			const md = require('markdown-it')();
+				if (document.extension === '.md') {
+				// eslint-disable-next-line global-require
+				// const { text } = require('reading-time')(document.text);
+			
+				// document.readingTime = text;
+				const mdToHtml = md.render(document.text);
+				document.bodyPlainText = mdToHtml;
 			}
-		},
+		}
+	},
+
+	markdownit: {
+		preset: 'default',
+		linkify: true,
+		breaks: true,
+		// use: ['markdown-it-div', 'markdown-it-attrs'],
 	},
 
 }
