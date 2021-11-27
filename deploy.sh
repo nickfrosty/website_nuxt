@@ -17,7 +17,7 @@ RESTART_ARGS=
 # if run: force to the owner of APP_DIR
 if (( $EUID == 0 )); then
   USER=$(stat -c %U $APP_DIR)
-  su -c ./deploy.sh $USER
+  sudo -u $USER ./deploy.sh
   exit
 fi
 
@@ -50,3 +50,9 @@ cp -r -f ./dist/* $APP_DIR/public_html/
 # force the deploy script to be executable
 cp ./deploy.sh $APP_DIR/
 chmod +x $APP_DIR/deploy.sh
+
+# update all the permissions, as neededd
+if (( $EUID == 0 )); then
+  USER=$(stat -c %U $APP_DIR)
+  chown -R $USER:$USER $APP_DIR/*
+fi
