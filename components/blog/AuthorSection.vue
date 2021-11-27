@@ -1,6 +1,6 @@
 <template>
-    <section class="mx-auto max-w-xl my-12 space-y-4 flex justify-between space-x-10">
-        <div v-if="author" class="flex items-center justify-center whitespace-nowrap mr-5">
+    <section class="justify-between block max-w-xl mx-auto my-12 space-x-10 space-y-4 md:flex">
+        <div v-if="author" class="flex items-center justify-center whitespace-nowrap">
             <img v-if="author.avatar" :src="author.avatar" class="w-20 h-20 my-0 mr-4 rounded-full">
             <div class="text-left">
                 <div>
@@ -13,14 +13,14 @@
         </div>
         <div v-else class="flex items-center justify-center">
             <div class="text-left">
-                time ago
+                <time datetime="">{{ post_date }}</time>
                 <!-- <time datetime="{{ date format="Y-m-d" }}">{{ date format="F jS, Y" }}</time> -->
             </div>
         </div>
         
         <div v-if="post.tags" class="place-content-end">
-            <span v-for="tag in post.tags" :key="tag" class="space-x-0 mb-1 inline-block">
-                <nuxt-link :to="tag_url(tag)" class="tag indigo no-underline text-base">
+            <span v-for="tag in post.tags" :key="tag" class="inline-block mb-1 space-x-0">
+                <nuxt-link :to="tag_url(tag)" class="text-base no-underline tag indigo">
                     #{{ tag }}
                 </nuxt-link>
             </span>

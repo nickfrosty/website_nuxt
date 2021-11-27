@@ -1,23 +1,20 @@
 <template>
-    <nuxt-link :to="url" class="card">
-        <img :class="oversized ? 'hidden md:block' : 'hidden'" height="285" :src="image" :alt="post.title">
-        <!-- <img :class="oversized ? 'md:hidden' : ''" height="285" src="{{ glide:hero_image height="570" width="736" fit="crop_focal" }}" alt="{{ hero_image:alt }}"> -->
+    <div class="card">
+        <nuxt-link :to="url"><img :class="oversized ? '' : ''" class="block" height="285" :src="image" :alt="post.title"></nuxt-link>
         <div class="px-8 py-6">
-            <h2 class="text-2xl font-bold leading-tight text-gray-800 hover:text-hot-pink">
-                {{ post.title  }}
-            </h2>
+            <h2><nuxt-link :to="url" class="text-2xl font-bold leading-tight text-gray-800 hover:text-hot-pink">{{ post.title  }}</nuxt-link></h2>
             <p class="flex items-center mt-4 text-xs text-gray-600">
                 {{ date }}
             </p>
-            <div v-if="post.tags" class="space-x-2 mt-2">
+            <div v-if="post.tags" class="mt-2 space-x-2">
                 <span v-for="tag in post.tags.slice(0, 2)" :key="tag">
-                    <nuxt-link :to="tag_url(tag)" class="tag indigo text-base">
+                    <nuxt-link :to="tag_url(tag)" class="text-base tag indigo">
                         #{{ tag }}
                     </nuxt-link>
                 </span>
             </div>
         </div>
-    </nuxt-link>
+    </div>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="text-center">
+        <section class="mb-12 text-center">
 
             <h1 class="mb-5 text-4xl font-bold">Active Projects</h1>
 
@@ -14,9 +14,9 @@
 			</div>
         </section>
 
-        <div class="w-2/3 h-px mx-auto my-20 transform bg-indigo-500 md:w-2/3 rotate-1"></div>
+        <hr />
 
-        <section class="max-w-2xl mx-auto text-center">
+        <section class="max-w-2xl mx-auto mb-12 text-center">
 
             <h1 class="mb-5 text-4xl font-bold">Other Projects, <br class="block sm:hidden" /> Various States</h1>
             

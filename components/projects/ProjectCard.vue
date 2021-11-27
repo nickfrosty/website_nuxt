@@ -1,15 +1,15 @@
 <template>
-    <a :href="project.url" target="_blank" class="card text-gray-800 hover:no-underline">
+    <div class="text-gray-800 card hover:no-underline">
         <div class="flex items-center gap-3">
-            <img :src="logo" :alt="project.name" class="w-12 h-12 rounded" />
+            <a :href="project.url" target="_blank"><img :src="logo" :alt="project.name" class="w-12 h-12 rounded" /></a>
             <div class="block">
-                <a target="_blank" :href="project.url" class="text-2xl font-bold text-gray-700 hover:no-underline">{{ project.name }}</a>
+                <a :href="project.url" target="_blank" class="text-2xl font-bold text-gray-700 hover:text-hot-pink link">{{ project.name }}</a>
                 <span style="top:-.25rem" :class="'status ' + statusClass">{{ project.status }}</span>
                 <div class="block text-sm text-gray-500">{{ project.timerange }}</div>
             </div>
         </div>
         <p v-if="project.description" class="">{{ project.description }}</p>
-    </a>
+    </div>
 </template>
 
 <script>
@@ -44,7 +44,10 @@ export default {
 
 <style lang="postcss" scoped>
 .card{
-    @apply  relative top-0 block h-full p-5 space-y-3 overflow-hidden transition-all duration-75 ease-in-out bg-white border border-white cursor-pointer hover:shadow-lg hover:border-indigo-200 lg:text-left hover:-top-2 rounded-xl;
+    @apply relative top-0 block h-full overflow-hidden transition-all duration-75 ease-in-out;
+    @apply bg-white border border-white rounded-xl;
+    @apply lg:text-left md:hover:border-indigo-200 md:hover:-top-2 md:hover:shadow-lg;
+    @apply md:p-5 p-0 space-y-3;
 }
 
 /* Style the stauts pills */

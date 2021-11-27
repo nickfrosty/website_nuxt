@@ -4,8 +4,9 @@
     @apply font-semibold underline;
   }
 
-  h1 {
-    @apply font-bold leading-none uppercase font-display;
+  h1,
+  h1 a {
+    @apply font-bold leading-none no-underline uppercase font-display;
     margin-bottom: 1em;
 
     font-size: min(max(3rem, 5.25vw), 6rem);
@@ -14,8 +15,9 @@
     }
   }
 
-  h2 {
-    @apply py-6 mt-12 text-4xl font-bold leading-none tracking-tight;
+  h2,
+  h2 a {
+    @apply py-6 mt-12 text-4xl font-bold leading-none tracking-tight no-underline;
   }
 
   h3 {
@@ -27,10 +29,10 @@
   }
 
   p {
-    @apply text-lg leading-relaxed mb-8;
+    @apply mb-8 text-lg leading-relaxed;
   }
   > p:first-of-type {
-    @apply text-2xl;
+    @apply text-xl md:text-2xl;
   }
   > blockquote {
     @apply px-4 pt-6 mb-12 text-3xl italic font-bold leading-tight text-center;
@@ -43,10 +45,6 @@
   > p > img,
   > img {
     @apply mx-auto my-10;
-  }
-  hr {
-    /* @apply my-3 text-indigo-500; */
-    @apply w-2/3 h-px mx-auto my-20 transform bg-indigo-500 md:w-2/3 rotate-1 text-indigo-500;
   }
 
   /* a {

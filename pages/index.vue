@@ -9,7 +9,7 @@
 			<p class="col-span-2 text-2xl font-medium sm:col-span-1">
 				<span class="inline-block mb-5 text-3xl lg:mb-0 lg:text-2xl">Hi! I'm Nick,</span> 
 				<br class="lg:hidden" /> an indie developer working on interesting 
-				<nuxt-link to="/projects" class="link underline">projects</nuxt-link>. 
+				<nuxt-link to="/projects" class="underline link">projects</nuxt-link>. 
 				Including writing code, building in my workshop, and creating content online.
 			</p>
 			

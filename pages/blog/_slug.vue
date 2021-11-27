@@ -1,7 +1,7 @@
 <template>
 	<article class="max-w-5xl px-3 mx-auto">
 		<header class="max-w-3xl mx-auto text-center article">
-			<h1>{{ post.title }}</h1>
+			<h1><nuxt-link :to="url" class="text-4xl md:text-5xl">{{ post.title }}</nuxt-link></h1>
 			<p v-if="post.intro">{{ post.intro }}</p>
 			
 			<author-section :author="author" :post="post" :path="'/blog'" />
@@ -10,7 +10,7 @@
 
 		<img v-if="hero_image" class="rounded-xl" :src="hero_image" :alt="post.title">
 
-		<nuxt-content :document="post" class="max-w-3xl py-6 mx-auto lg:py-12 article" />
+		<nuxt-content :document="post" class="max-w-3xl mx-auto article" />
 
 			<!-- {{ main_content }}
 				{{ if type == "text" }}
@@ -59,6 +59,9 @@ export default {
         }
     },
 	computed:{
+		url(){
+            return `/blog/${this.post.slug}`;
+        },
 		post_date(){
 			let date =  this.post.date || this.post.updatedAt || this.post.createdAt; 
 			return new Date(date).toLocaleString("en-US", { dateStyle: 'medium' });

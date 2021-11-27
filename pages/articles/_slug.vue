@@ -1,7 +1,7 @@
 <template>
 	<article class="max-w-6xl px-3 mx-auto">
 		<header class="max-w-4xl mx-auto text-center article">
-			<h1 class="text-4xl md:text-5xl">{{ post.title }}</h1>
+			<h1><nuxt-link :to="url" class="text-4xl md:text-5xl">{{ post.title }}</nuxt-link></h1>
 			<p v-if="post.intro">{{ post.intro }}</p>	
 		</header>
 
@@ -9,7 +9,7 @@
 		
 		<author-section :post="post" :author="author" :path="'/articles'" />
 
-		<nuxt-content :document="post" class="max-w-3xl py-6 mx-auto lg:py-8 article" />
+		<nuxt-content :document="post" class="max-w-3xl mx-auto article" />
 
 			<!-- {{ main_content }}
 				{{ if type == "text" }}
@@ -58,6 +58,9 @@ export default {
         }
     },
 	computed:{
+		url(){
+            return `/articles/${this.post.slug}`;
+        },
 		image(){
             let image = this.post.hero_image || this.post.image;
 			if ( !image )

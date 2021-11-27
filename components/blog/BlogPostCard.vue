@@ -1,12 +1,12 @@
 <template>
-    <nuxt-link :to="url" class="card px-8 py-6">
+    <div class="card">
             <h2 class="text-2xl font-bold leading-tight">
-                {{ post.title  }}
+                <nuxt-link :to="url" class="link">{{ post.title  }}</nuxt-link>
             </h2>
             <div class="">
-                <div class="flex items-center mt-4 text-xs text-gray-600 space-x-5">
-                    <span class="">{{ date }} </span>
-                    <div v-if="post.tags" class="space-x-2 inline-block">
+                <div class="flex items-center mt-4 space-x-5 text-xs text-gray-600">
+                    <span class="block whitespace-nowrap md:inline-block">{{ date }} </span>
+                    <div v-if="post.tags" class="block md:inline-block">
                         <span v-for="tag in post.tags" :key="tag">
                             <nuxt-link :to="tag_url(tag)" class="tag indigo">
                                 #{{ tag }}
@@ -22,7 +22,7 @@
                     </div>
                 {{ /if }} -->
             </div>
-    </nuxt-link>
+    </div>
 </template>
 
 <script>
@@ -50,6 +50,9 @@ export default {
 
 <style lang="postcss" scoped>
 .card{
-    @apply relative top-0 block h-full mb-3 overflow-hidden transition-all duration-75 ease-in-out bg-white border border-white hover:border-indigo-200 hover:-top-2 hover:shadow-lg rounded-xl;
+    @apply relative top-0 block h-full mb-3 overflow-hidden transition-all duration-75 ease-in-out;
+    @apply bg-white border border-white rounded-xl;
+    @apply md:hover:border-indigo-200 md:hover:-top-2 md:hover:shadow-lg;
+    @apply px-0 py-2 md:px-8 md:py-6;
 }
 </style>
