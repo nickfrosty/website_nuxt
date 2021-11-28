@@ -14,7 +14,7 @@ body {
 
 /* Define custom tailwind components */
 .link,
-article > a {
+article a {
   @apply cursor-pointer;
   @apply text-indigo-500 hover:underline hover:text-hot-pink;
   @apply group-hover:underline group-hover:text-hot-pink;

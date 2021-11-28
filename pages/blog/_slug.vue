@@ -8,7 +8,7 @@
 			
 		</header>
 
-		<img v-if="hero_image" class="rounded-xl" :src="hero_image" :alt="post.title">
+		<img v-if="hero_image" class="block mb-8 rounded-xl" :src="hero_image" :alt="post.title">
 
 		<nuxt-content :document="post" class="max-w-3xl mx-auto article" />
 

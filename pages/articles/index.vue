@@ -48,7 +48,7 @@ export default {
 		try {
 			const posts = await $content("articles", { deep: true })
 			.where({ published: true })
-			.sortBy("createdAt", "desc").fetch()
+			.sortBy("date", "desc").fetch()
 			// .catch((err) => { throw new Error('No posts found')});
 			
 			return { posts };

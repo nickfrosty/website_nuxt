@@ -29,8 +29,8 @@ export default {
     /* @apply relative top-0 block w-full h-full max-w-xl col-span-2 p-5 mx-auto mt-8 overflow-hidden transition-all duration-75 ease-in-out bg-white border border-indigo-100 shadow-xl hover:border-indigo-200 lg:text-left hover:-top-2 rounded-xl; */
     @apply max-w-xl mx-auto;
     @apply relative top-0 block h-full mb-3 overflow-hidden transition-all duration-75 ease-in-out;
-    @apply bg-white border border-white rounded-xl;
-    @apply md:hover:border-indigo-200 md:hover:-top-2 md:hover:shadow-lg;
+    @apply bg-white border border-white md:border-indigo-200 rounded-xl md:shadow;
+    @apply  md:hover:-top-2 md:hover:shadow-lg;
     @apply px-0 py-2 md:px-8 md:py-6;
 }
 </style>
