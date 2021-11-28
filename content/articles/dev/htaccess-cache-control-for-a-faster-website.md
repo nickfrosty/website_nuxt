@@ -51,6 +51,6 @@ Inside of your **htaccess** file, you need to add the following code in order to
 # End cache control
 ```
 
-Using the _mod_expires_ module inside of htaccess, I set the expiration time (aka _cache_) time for each of the file types. Feel free to change the expiration time to your hearts desire.
+Using the `mod_expires` module inside of htaccess, I set the expiration time (aka _cache_) time for each of the file types. Feel free to change the expiration time to your hearts desire.
   
 Typically, I set the CSS/JS cache time to be a month or more and the images to be even longer. My reasoning is that if I am more likely to make changes to the design of my sites far more often than changes to images. You know?

@@ -7,7 +7,7 @@
             <nuxt />
         </main>
         
-        <site-footer></site-footer>
+        <site-footer v-if="!$utils.isRoute($nuxt.$route, '/')"></site-footer>
     </div>
 </template>
 

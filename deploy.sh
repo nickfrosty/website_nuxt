@@ -26,6 +26,7 @@ set -x
 # Pull latest code
 if [[ -d $APP_DIR/.stage ]]; then
   cd $APP_DIR/.stage
+  git stash
   git pull
 else
   git clone $GIT_URL $APP_DIR/.stage
@@ -48,7 +49,7 @@ cp -r -f ./dist/* $APP_DIR/public_html/
 ### Finishing work ###
 
 # force the deploy script to be executable
-cp ./deploy.sh $APP_DIR/
+cp ./deploy.sh $APP_DIR/deploy.sh
 chmod +x $APP_DIR/deploy.sh
 
 # update all the permissions, as neededd
