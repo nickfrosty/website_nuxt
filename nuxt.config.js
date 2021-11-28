@@ -1,3 +1,5 @@
+import highlightjs from 'highlight.js'
+
 const seo = require("./modules/seo");
 
 export default {
@@ -127,8 +129,8 @@ export default {
 	content: {
 		markdown: {
 			prism: {
-				// theme: false,
-			},
+				theme: 'prism-themes/themes/prism-material-oceanic.css'
+			}
 		},
 	},
 
