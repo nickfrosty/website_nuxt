@@ -7,7 +7,7 @@ category: tutorials
 tags:
   - obs-studio
   - windows
-date: 2021-07-30
+date: 2020-07-30
 ---
 
 With OBS Studio, you can record your computer's screen with a **free and pretty simple setup**. Whether you are trying to make a screencast tutorial or record some game play from your favorite video game, OBS Studios is a great options.

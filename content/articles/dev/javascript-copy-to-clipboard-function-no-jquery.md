@@ -3,7 +3,6 @@ published: true
 title: 'JavaScript copy to clipboard function (no jQuery)'
 intro: 'Copy to clipboard with the click of a button. No jQuery, just vanilla JavaScript. Simple. Lightweight.'
 hero_image: /media/articles/javascript/JavaScript-copy-to-clipboard-function-lightweight-and-with-no-jQuery-2.jpg
-updated_at: 1626377237
 date: 2021-06-18
 category: dev
 tags:

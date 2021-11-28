@@ -4,7 +4,6 @@ title: 'Use Laravel Mix without Laravel (using npm)'
 intro: "Laravel Mix is a great tool to smooth out your development process. But I don't use Laravel. But you can still get the magic sauce of Laravel Mix without Laravel, using npm"
 hero_image: '/media/articles/laravel/laravel-mix-without-laravel-with-npm.jpg'
 date: 2021-05-03
-updated_at: 1625947415
 category: dev
 tags:
 - laravel

@@ -7,7 +7,7 @@ category: marketing
 tags:
   - mailchimp
   - newsletters
-date: 2021-07-21
+date: 2021-03-21
 ---
 
 One of the sweetest features of most popular email marketing software is custom signup forms. You can host your own MailChimp signup forms on your website. Even have custom embedded form success messages.

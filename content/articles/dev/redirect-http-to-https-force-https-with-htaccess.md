@@ -4,7 +4,6 @@ title: 'Redirect http to https: force https with htaccess'
 intro: 'These days, if your site does not force https then it may not be secure. Chrome, Brave, and Firefox will give nasty security warnings to your users if you site is not secured with https/ssl.'
 hero_image: /media/articles/htaccess/force-https-with-htaccess-redirect-http-to-https.jpg
 date: 2021-07-10
-updated_at: 1625946914
 category: dev
 tags:
  - htaccess

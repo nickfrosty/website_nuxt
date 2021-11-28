@@ -3,7 +3,6 @@ published: false
 title: 'How to Install Ghost CMS on Windows localhost'
 intro: 'Open source, creator-centric, and build with NodeJS: the Ghost CMS is wonderful. Installing Ghost locally on Windows is a great way to give it a test drive to see if it is right for you.'
 date: 2021-06-29
-updated_at: 1626377283
 category: dev
 tags:
 - ghost

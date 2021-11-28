@@ -1,8 +1,8 @@
 ---
 published: true
 title: 'Boomerang: Week 1 complete'
-intro: 'With the first week of building <a href="http://Boomerang.link">Boomerang.link</a> coming to a close, I think I have made some really good progress. A good portion of the basic functionality and design complete, there is really only once "major" portion left. Actually sending the "boomerang" reminders. You know, the core product...'
-hero_image: blog/boomerang/week-1-complete/boomerang.link---landing-page.png
+intro: 'With the first week of building Boomerang.link coming to a close, I think I have made some really good progress. A good portion of the basic functionality and design complete, there is really only once "major" portion left. Actually sending the "boomerang" reminders. You know, the core product...'
+hero_image: /media/blog/boomerang/week-1-complete/boomerang.link---landing-page.png
 category: devlog
 date: 2021-10-25
 tags:
