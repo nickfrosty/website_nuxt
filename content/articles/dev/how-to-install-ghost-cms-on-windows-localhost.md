@@ -1,11 +1,13 @@
 ---
-published: false
+published: true
 title: 'How to Install Ghost CMS on Windows localhost'
 intro: 'Open source, creator-centric, and build with NodeJS: the Ghost CMS is wonderful. Installing Ghost locally on Windows is a great way to give it a test drive to see if it is right for you.'
-date: 2021-06-29
+hero_image: '/media/articles/ghost/How-to-Install-Ghost-CMS-on-Windows-localhost.jpg'
+date: 2021-11-29
 category: dev
 tags:
 - ghost
+- windows
 - npm
 ---
 The thing about trying to install Ghost CMS on Windows is that there a few, let's say nuances. Ghost CMS is actually designed to be run on a specific Ubuntu linux version. So you have to perform some extra steps to setup a Ghost blog on Windows. Fear not, it can and shall be done.

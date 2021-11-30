@@ -9,6 +9,7 @@ tags:
   - php
   - wordpress
 ---
+
 This fatal error occurs when your web app or website is using too much memory. Plain and simple. Just like a local application running on your computer, your website takes some amount of memory to run. So at your site runs on your hosting provider's servers, you are using up some of that server's memory, known as RAM.
 
 Once your website has reached the PHP memory limit that is set in your server's PHP configuration file, usually 8MB by default, you run out of your available memory limit.
@@ -47,13 +48,13 @@ Browse on over to the script using your preferred FTP client, or directly from a
 
 ![update the wp-config.php file to raise the memory limit for WordPress](/media/articles/php-errors/php_memory_limit-wordpress-wp-config-file.png)
 
-You need to add this one line of code into the WordPress config file. (I recommend adding it right after the similar line of code that sets the "WP_DEBUG" setting.)
+You need to add this one line of code into the WordPress config file. (I recommend adding it right after the similar line of code that sets the `WP_DEBUG` setting.)
 
 ```php
   define( 'WP_MEMORY_LIMIT', '256M' );
 ```
 
-This line of code will tell WordPress to set the PHP memory limit specifically for your WordPress website. After you add the new line of code, save your changes and upload the wp-config.php file back where you found it.
+This line of code will tell WordPress to set the PHP memory limit specifically for your WordPress website. After you add the new line of code, save your changes and upload the `wp-config.php` file back where you found it.
 
 You can learn more about the WordPress configuration file from the official WordPress website.
 

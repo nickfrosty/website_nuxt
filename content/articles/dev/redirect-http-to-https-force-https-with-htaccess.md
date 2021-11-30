@@ -9,17 +9,18 @@ tags:
  - htaccess
  - litespeed
 ---
+
 Using your website's .htaccess file, you can **force https** to all of your users. Securing your site, and getting rid of the annoying "insecure website" message.
 
 ## What is a htaccess file anyway?
 
 A htaccess file is a special file on your web server that directs how certain actions are handles by the server. Most of the time, the htaccess instructs the server how to write/rewrite web requests (like forcing https or forcing www on your website) or how your server should handle image compression.
 
-The file is simply named "**.htaccess**" (just the extensions, no actual name) and placed in the root of your public directory for your website. 
+The file is simply named `.htaccess` (just the extensions, no actual name) and placed in the root of your public directory for your website. 
 
 ### htaccess on Apache
 
-The [Apache server](https://www.apache.org/) software has been around forver. Basically since the beginning of the internet. Tons of websites run on an Apache server. Being so old, htaccess files were originally designed for Apache servers. So these files work flawlessly with Apache. All you need is the correct **mod_rewrite*** module installed on your Apache server, and you are ready to create and edit your .htaccess file. Lucky for us all, Apache comes with the **mod_rewrite** module installed and enabled. 
+The [Apache server](https://www.apache.org/) software has been around forver. Basically since the beginning of the internet. Tons of websites run on an Apache server. Being so old, htaccess files were originally designed for Apache servers. So these files work flawlessly with Apache. All you need is the correct `mod_rewrite` module installed on your Apache server, and you are ready to create and edit your .htaccess file. Lucky for us all, Apache comes with the `mod_rewrite` module installed and enabled. 
 
 Apache servers will usually work out of the box with htaccess configurations. All child directories will use the parent direcory's htaccess file for itself. Easy day.
 
@@ -33,7 +34,13 @@ LiteSpeed and [OpenLiteSpeed](https://openlitespeed.org/kb/) servers are a bit d
 
 2. And two, when you update a htaccess file on LiteSpeed servers **you must restart the LiteSpeed server software.** This is the only way to reload the changes you made to your htaccess file. Also, each htaccess file will only work for the directory the file is actually located in. The settings do no trickle down to child directories. So you will need another htaccess file for each child directory.
 
-FYI: Because of it handles htaccess, and many other reasons, LiteSpeed servers are usually WAY faster than Apache servers.
+---
+
+> FYI
+> 
+> Because of how it handles htaccess, and many other reasons, LiteSpeed servers are usually WAY faster than Apache servers.
+
+---
 
 ### htaccess on Nginx? Not a chance.
 
@@ -46,17 +53,17 @@ This is a special file, if you couldn't already tell. The actual _file name_ is 
 If your site does not already have a htaccess file, then you will need to create one. It should be in the root of your ***public** directory for your website, (e.g. /home/site.com/public_html or ~/www/site.com/public, etc).
 
 ```bash
-	<Files .htaccess>
-	order allow,deny
-	deny from all
-	</Files>
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
 
-	<IfModule mod_rewrite.c>
-		Options +FollowSymLinks
-			RewriteEngine on
-			
-		# custom config settings here
-	</IfModule>
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+		RewriteEngine on
+		
+	# custom config settings here
+</IfModule>
 ```
 Each htaccess file on you site will have a similar layout. The beginning will usually restrict access for people browsing to the file and reading it in their browser. Then it may check for a _module_, like **mod_rewrite**. And finally have actual commands and configuration settings for your web server to use to handle web requests
 
@@ -65,14 +72,14 @@ Each htaccess file on you site will have a similar layout. The beginning will us
 To actually redirect all http requests into https, you only need to add 2 lines of config to your htaccess file. Not including the comment:
 
 ```bash
-	# redirect all http to https
-	RewriteCond %{HTTPS} off 
-	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# redirect all http to https
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
-**RewriteCond**... : tells the web server to only rewrite on the condition of https being off (aka _http_)
+`RewriteCond` ... : tells the web server to only rewrite on the condition of https being off (aka _http_)
 
-**RewriteRule**... : this tells the web server how to rewrite the url based on the previous condition statement. In this case, we take the entire url from the user **"(.*)"** and send it back to using https.
+`RewriteRule` ... : this tells the web server how to rewrite the url based on the previous condition statement. In this case, we take the entire url from the user **"(.*)"** and send it back to using https.
 
 ## Force https on WordPress
 
@@ -84,28 +91,28 @@ If you do not feel comfortable editing this file (and that's cool too), there ar
 
 You may start to run into issues while trying to redirect http to https in your localhost server or developement environemnt. Usually for the simple fact that your local dev server likely does not have https/ssl enabled. Unless you are using something cool like Laravel Valet to get a secure local dev environemnt.
 
-By adding a few extra **RewriteCond** statements before your **RewriteRule** that forces https, you can tell the Apache/LiteSpeed web server to not force https on your local dev environment, aka localhost.
+By adding a few extra `RewriteCond` statements before your `RewriteRule` that forces https, you can tell the Apache/LiteSpeed web server to not force https on your local dev environment, aka localhost.
 
 First checking for the remote ip address for localhost (_127.0.0.1_), since some server setups may return this one. Then checking for the other common remote address for local host (_::1_). And finally checking for the remote host being your local _127.0.0.1_ ip address.
 
 ```bash
-	<Files .htaccess>
-	order allow,deny
-	deny from all
-	</Files>
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
 
-	<IfModule mod_rewrite.c>
-			Options +FollowSymLinks
-			RewriteEngine on
+<IfModule mod_rewrite.c>
+		Options +FollowSymLinks
+		RewriteEngine on
 
-			# force https in the browser (but not on localhost)
-			RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
-			RewriteCond %{REMOTE_ADDR} !^::1
-			RewriteCond %{REMOTE_HOST} !^127\.0\.0\.1
-			RewriteCond %{HTTPS} off 
-			RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+		# force https in the browser (but not on localhost)
+		RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+		RewriteCond %{REMOTE_ADDR} !^::1
+		RewriteCond %{REMOTE_HOST} !^127\.0\.0\.1
+		RewriteCond %{HTTPS} off 
+		RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-	</IfModule>
+</IfModule>
 ```
 
 Every web site or project I work on, I use this. It works like a charm. Keeping the public websites secure for actual users on the internet. While also not trying to force https in my local developemnt environment. Life changing.

@@ -60,7 +60,7 @@ For some reason, it seems like the browsers don't want to make it easy to manipu
 
 Add this JavaScript copy function into your web page. Put it anywhere you want, and it should work just fine.
 
-On any text or element you want to copy text with JavaScript, use must call this "copy(this)" function. Like so:
+On any text or element you want to copy text with JavaScript, use must call this `copy(this)` function. Like so:
 
 Copy text from a text box or textarea:
 
@@ -69,7 +69,7 @@ Copy text from a text box or textarea:
 <textarea cols="50" rows="4">try to copy me</textarea>
 ```
 
-Copying text from a text box or text area proved to be super easy. The JavaScript "select" and "setSelectionRange" functions were literally designed for it! But... what about copying regular text on the page? A bit more tricky:
+Copying text from a text box or text area proved to be super easy. The JavaScript `select` and `setSelectionRange` functions were literally designed for it! But... what about copying regular text on the page? A bit more tricky:
 
 Copy text from a div, span, or any other html element:
 

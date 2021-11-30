@@ -15,8 +15,13 @@ body {
 .nuxt-content-highlight {
   @apply mb-8;
 }
-p code {
-  @apply text-white bg-indigo-500;
+p code,
+li code,
+blockquote code,
+h1 code,
+h2 code,
+h3 code {
+  @apply text-white bg-indigo-500 rounded shadow drop-shadow-sm;
 }
 
 /* Define custom tailwind components */

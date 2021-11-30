@@ -16,9 +16,9 @@ The basic way to add smooth scroll animation is using anchors/indexes on your we
 
 So, how to add the smooth scroll animation you ask?
 
-- add the anchor link on your page (a href="#my_link")
-- create the anchor endpoint on the page element ( div id="my_link")
-- add the CSS scroll animation property (aka "scroll-behavior")
+- add the anchor link on your page: `<a href="#my_link">`
+- create the anchor endpoint on the page element: `<div id="my_link">`
+- add the CSS scroll animation property, aka `scroll-behavior`
 - enjoy
 
 ## Add the anchor for smooth scrolling
@@ -47,9 +47,9 @@ html{
 }
 ```
 
-**Note:** It is important to add the "scroll-behavior" style on to the "html" tag so your entire website will have the smooth scrolling effect.
+**Note:** It is important to add the `scroll-behavior` style on to the `html` tag so your entire website will have the smooth scrolling effect.
 
-Some people, including myself, have tried to set the smooth scrolling on the "body" tag. But that does not work for some reason.
+Some people, including myself, have tried to set the smooth scrolling on the `body` tag. But that does not work for some reason.
 
 Once you save your changes, and reload the CSS into the browser, your snazzy new smooth scrolling will be in effect.
 
