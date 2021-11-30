@@ -61,7 +61,7 @@ export default {
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
-		'nuxt-seo',
+		'@nickfrosty/nuxt-seo',
 		'@nuxt/content',
 		'@nuxtjs/axios',
 		'@nuxt/image',
