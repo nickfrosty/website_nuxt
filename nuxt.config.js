@@ -185,7 +185,7 @@ export default {
 				// document.readingTime = text;
 				const mdToHtml = md.render(document.text);
 
-				const utils = require("./plugins/utils");
+				const utils = require("./modules/utils");
 
 				document.bodyPlainText = utils.relative_to_asolute(mdToHtml, 'https://frostbutter.com');
 			}
