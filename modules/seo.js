@@ -94,7 +94,9 @@ exports.createFeedFromContent = async (feed, args) => {
 		// the url of the post is set first
 		const url = `${hostname}/${contentPath}/${post.slug}`;
 		const image = post.hero_image ? `${hostname}${post.hero_image}` : null;
-		const content = (image ? `<p><img alt="Cover image" src="${image}"></p>` : '') + post.bodyPlainText;
+		let content = (image ? `<p><img alt="${post.title}" title="${post.title}" src="${image}"></p>\n` : '') + post.bodyPlainText;
+
+		content += (`\n<hr /><br />This article was originally posted to my personal site at <a href="${url}">frostbutter.com</a>\n`);
 
 		// create the feed item for each 'post'
 		feed.addItem({

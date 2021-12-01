@@ -10,6 +10,7 @@ tags:
  - litespeed
 ---
 
+
 Using your website's .htaccess file, you can **force https** to all of your users. Securing your site, and getting rid of the annoying "insecure website" message.
 
 ## What is a htaccess file anyway?
@@ -20,9 +21,9 @@ The file is simply named `.htaccess` (just the extensions, no actual name) and p
 
 ### htaccess on Apache
 
-The [Apache server](https://www.apache.org/) software has been around forver. Basically since the beginning of the internet. Tons of websites run on an Apache server. Being so old, htaccess files were originally designed for Apache servers. So these files work flawlessly with Apache. All you need is the correct `mod_rewrite` module installed on your Apache server, and you are ready to create and edit your .htaccess file. Lucky for us all, Apache comes with the `mod_rewrite` module installed and enabled. 
+The [Apache server](https://www.apache.org/) software has been around forever. Basically since the beginning of the internet. Tons of websites run on an Apache server. Being so old, htaccess files were originally designed for Apache servers. So these files work flawlessly with Apache. All you need is the correct `mod_rewrite` module installed on your Apache server, and you are ready to create and edit your .htaccess file. Lucky for us all, Apache comes with the `mod_rewrite` module installed and enabled. 
 
-Apache servers will usually work out of the box with htaccess configurations. All child directories will use the parent direcory's htaccess file for itself. Easy day.
+Apache servers will usually work out of the box with htaccess configurations. All child directories will use the parent directory's htaccess file for itself. Easy day.
 
 ### htaccess on LiteSpeed or OpenLiteSpeed
 
@@ -44,7 +45,7 @@ LiteSpeed and [OpenLiteSpeed](https://openlitespeed.org/kb/) servers are a bit d
 
 ### htaccess on Nginx? Not a chance.
 
-Simply put, **you cannot use htaccess with a Nginx** server. The web server software was not designed for it, and they apparently have no intensions of doing so. Unfortunante.
+Simply put, **you cannot use htaccess with a Nginx** server. The web server software was not designed for it, and they apparently have no intensions of doing so. Unfortunate.
 
 ## Basic .htaccess file
 
@@ -65,6 +66,7 @@ deny from all
 	# custom config settings here
 </IfModule>
 ```
+
 Each htaccess file on you site will have a similar layout. The beginning will usually restrict access for people browsing to the file and reading it in their browser. Then it may check for a _module_, like **mod_rewrite**. And finally have actual commands and configuration settings for your web server to use to handle web requests
 
 ## Redirect http to https
@@ -89,7 +91,7 @@ If you do not feel comfortable editing this file (and that's cool too), there ar
 
 ## Force http on localhost (https everywhere else)
 
-You may start to run into issues while trying to redirect http to https in your localhost server or developement environemnt. Usually for the simple fact that your local dev server likely does not have https/ssl enabled. Unless you are using something cool like Laravel Valet to get a secure local dev environemnt.
+You may start to run into issues while trying to redirect http to https in your localhost server or development environment. Usually for the simple fact that your local dev server likely does not have https/ssl enabled. Unless you are using something cool like Laravel Valet to get a secure local dev environment.
 
 By adding a few extra `RewriteCond` statements before your `RewriteRule` that forces https, you can tell the Apache/LiteSpeed web server to not force https on your local dev environment, aka localhost.
 
@@ -115,4 +117,4 @@ deny from all
 </IfModule>
 ```
 
-Every web site or project I work on, I use this. It works like a charm. Keeping the public websites secure for actual users on the internet. While also not trying to force https in my local developemnt environment. Life changing.
+Every web site or project I work on, I use this. It works like a charm. Keeping the public websites secure for actual users on the internet. While also not trying to force https in my local development environment. Life changing.
