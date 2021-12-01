@@ -8,6 +8,8 @@ APP_NAME=frostbutter.com
 GIT_URL=git@github.com:nickfrosty/frostbutter
 RESTART_ARGS=
 
+PACKAGE_FILE=$APP_DIR/.stage/package.json
+
 # Uncomment and modify the following if you installed Passenger from tarball
 #export PATH=/path-to-passenger/bin:$PATH
 
@@ -23,6 +25,15 @@ fi
 
 set -x
 
+# set placeholder values for the timestamps
+PACKAGE_OLD=0
+PACKAGE_NEW=0
+
+# get the important current timestamps
+if [[ -f $PACKAGE_FILE ]]; then
+  PACKAGE_OLD=`stat -c %Y $PACKAGE_FILE`
+fi
+
 # Pull latest code
 if [[ -d $APP_DIR/.stage ]]; then
   cd $APP_DIR/.stage
@@ -33,8 +44,13 @@ else
   cd $APP_DIR/.stage
 fi
 
+# get the important new timestamps
+PACKAGE_NEW=`stat -c %Y $PACKAGE_FILE`
+
 # Install dependencies
-npm install
+if [ "$PACKAGE_NEW" -gt "$PACKAGE_OLD" ]; then
+  npm install
+fi
 
 ### Build and deploy steps  ###
 
