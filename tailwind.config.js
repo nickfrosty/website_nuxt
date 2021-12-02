@@ -3,7 +3,7 @@ module.exports = {
     // ...
    animation: true,
   },
-  darkMode: 'class',
+  darkMode: 'media',
   purge: {
     // removes unused Tailwind classes in 'production' only
     enabled: process.env.NODE_ENV == 'production',

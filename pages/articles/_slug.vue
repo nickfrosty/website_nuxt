@@ -1,7 +1,7 @@
 <template>
 	<article class="max-w-6xl px-3 mx-auto">
 		<header class="max-w-4xl mx-auto text-center article">
-			<h1><nuxt-link :to="url" class="text-4xl text-gray-800 no-underline md:text-6xl">{{ post.title }}</nuxt-link></h1>
+			<h1><nuxt-link :to="url" class="text-4xl text-gray-800 no-underline dark:text-gray-300 md:text-6xl">{{ post.title }}</nuxt-link></h1>
 			<p v-if="post.intro">{{ post.intro }}</p>	
 		</header>
 

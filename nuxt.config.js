@@ -57,7 +57,14 @@ export default {
 	buildModules: [
 		// https://go.nuxtjs.dev/tailwindcss
 		'@nuxtjs/tailwindcss',
+		'nuxt-webpack-optimisations',
 	],
+	
+	webpackOptimisations: {
+		// hard source is the riskiest, if you have issues don't enable it
+		hardSourcePlugin: process.env.NODE_ENV === 'development',
+		parallelPlugin: process.env.NODE_ENV === 'development',
+	},
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [

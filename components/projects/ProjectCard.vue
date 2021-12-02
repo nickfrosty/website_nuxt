@@ -1,9 +1,9 @@
 <template>
-    <div class="text-gray-800 card hover:no-underline">
+    <div class="card hover:no-underline">
         <div class="flex items-center gap-3">
             <a :href="project.url" target="_blank"><img :src="logo" :alt="project.name" class="w-12 h-12 rounded" /></a>
             <div class="block">
-                <a :href="project.url" target="_blank" class="text-2xl font-bold text-gray-700 hover:text-hot-pink link">{{ project.name }}</a>
+                <a :href="project.url" target="_blank" class="text-2xl font-bold text-gray-700 dark:text-gray-300 hover:text-hot-pink link">{{ project.name }}</a>
                 <span style="top:-.25rem" :class="'status ' + statusClass">{{ project.status }}</span>
                 <div class="block text-sm text-gray-500">{{ project.timerange }}</div>
             </div>
@@ -44,10 +44,9 @@ export default {
 
 <style lang="postcss" scoped>
 .card{
-    @apply relative top-0 block h-full overflow-hidden transition-all duration-75 ease-in-out;
-    @apply bg-white border border-white rounded-xl;
-    @apply lg:text-left md:hover:border-indigo-200 md:hover:-top-2 md:hover:shadow-lg;
     @apply md:p-5 p-0 space-y-3;
+    @apply shadow-md;
+    /* @apply md:hover:-top-2 md:hover:shadow-lg; */
 }
 
 /* Style the stauts pills */

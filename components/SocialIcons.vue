@@ -33,8 +33,8 @@
 
 <style lang="postcss" scoped>
 .icon{
-    @apply text-gray-800;
-    @apply hover:text-indigo-500;
+    @apply text-gray-800 dark:text-white;
+    @apply hover:text-hot-pink;
 }
 svg{
     @apply inline w-8 h-8;

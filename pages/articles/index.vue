@@ -13,27 +13,6 @@
 			</div>
 		</section>
 
-		<!-- {{ collection:articles as="posts" paginate="12" }}
-		<section class="gap-6 py-8 mx-auto">
-			{{ posts }}
-				<div class="{{ first ? 'md:col-span-2' : 'col-span-1' }}">
-					{{ partial:articles/card }}
-				</div>
-			{{ /posts }}
-		</section>
-		{{ paginate }}
-			{{ if prev_page || next_page }}
-			<section class="flex justify-center pt-16 space-x-8 text-xl font-bold">
-				{{ if prev_page }}
-					<a href="{{ prev_page }}"><span class="squiggle">&larr;</span> Newer articles</a>
-				{{ /if }}
-				{{ if next_page }}
-					<a href="{{ next_page }}">Older articles <span class="squiggle">&rarr;</span></a>
-				{{ /if }}
-			</section>
-			{{ /if }}
-		{{ /paginate }}
-		{{ /collection:articles }} -->
 	</main>
 </template>
 

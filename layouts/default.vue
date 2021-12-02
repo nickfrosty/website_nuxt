@@ -1,5 +1,5 @@
 <template>
-    <div style="font-family: Montserrat" class="min-h-screen overflow-x-hidden leading-normal tracking-normal text-gray-700 bg-white gradient font-body">
+    <div style="font-family: Montserrat" class="min-h-screen overflow-x-hidden leading-normal tracking-normal gradient font-body">
 
         <site-header></site-header>
     

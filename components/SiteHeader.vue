@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<nav id="navigation" class="absolute top-0 z-30 flex flex-row justify-center w-full text-lg font-bold text-indigo-500 bg-white sm:justify-end">
+		<nav id="navigation" class="absolute top-0 z-30 flex flex-row justify-center w-full text-lg font-bold text-indigo-500 sm:justify-end">
 			<ul class="flex flex-row px-6 py-2 mt-0">
 				<li><nuxt-link class="mx-3 hover:text-hot-pink" to="/projects">Projects</nuxt-link></li>
 				<li><nuxt-link class="mx-3 hover:text-hot-pink" to="/blog">Blog</nuxt-link></li>
