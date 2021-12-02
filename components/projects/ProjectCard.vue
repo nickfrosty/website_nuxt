@@ -44,8 +44,8 @@ export default {
 
 <style lang="postcss" scoped>
 .card{
-    @apply md:p-5 p-0 space-y-3;
-    @apply shadow-md;
+    @apply border-0 p-0 space-y-3;
+    @apply md:p-5 md:border md:shadow-md;
     /* @apply md:hover:-top-2 md:hover:shadow-lg; */
 }
 

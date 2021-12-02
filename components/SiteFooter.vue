@@ -2,7 +2,7 @@
 	<footer class="w-full pb-8 mt-5 mb-2 text-center text-gray-600 dark:text-gray-500 text-md">
 		<div id="footer-divider" class="w-2/3 h-px mx-auto mb-6 transform bg-indigo-600 md:w-1/3 -rotate-1"></div>
 
-		<div class="flex justify-between max-w-md mx-auto">
+		<div class="flex justify-between max-w-md px-3 mx-auto">
 			<div class="">&copy;2021 Nick Frostbutter</div>
 			<div class="flex justify-between space-x-6 text-gray-600 dark:text-gray-300">
 				<a href="https://twitter.com/nickfrosty" aria-label="@nickfrosty on Twitter" target="_blank" class="text-blue-500 no-underline">
