@@ -50,6 +50,7 @@ import NewsletterSignupForm from '~/components/NewsletterSignupForm.vue';
 import SocialIcons from '~/components/SocialIcons.vue';
 
 export default {
+	layout: 'home',
     components: {
         ProjectCard,
         SocialIcons,

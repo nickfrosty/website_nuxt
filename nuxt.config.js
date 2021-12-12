@@ -47,7 +47,7 @@ export default {
 		'~/plugins/gtag.js',
 		'~/plugins/utils.js',
 		// '~/plugins/fontawesome.js',
-		{ src: '~/plugins/nprogress.js', mode: 'client' },
+		// { src: '~/plugins/nprogress.js', mode: 'client' },
 	],
 
 	// Auto import components: https://go.nuxtjs.dev/config-components
