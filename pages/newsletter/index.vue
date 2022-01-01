@@ -3,8 +3,12 @@
 
 		<h1 class="mb-10 text-4xl font-bold text-center">Building in public, <br />sharing as I go 😁</h1>
 		
-		<p class="text-xl text-center">
+		<p class="mb-2 text-xl text-center">
 			Sharing my personal thoughts and progress updates on projects. 
+		</p>
+
+		<p class="text-center ">
+			PS: Here is my <a class="link" target="_blank" href="https://shard-piper-911.notion.site/2022-Get-things-done-df66e4729bd84b68bfaf16e74b7b4b51">2022 notion doc</a> where you can <br />see all my weekly progress as I am building in public. 
 		</p>
 		
 		<section class="px-1 my-10 space-y-1">
