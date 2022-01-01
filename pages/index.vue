@@ -82,7 +82,7 @@ export default {
 				// title: '<local page title>',
 				// description: '<local page desc>',
 				// image: '<local page image>',
-			// }, 
+			// },
 		})
 	},
 }

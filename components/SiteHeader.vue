@@ -9,7 +9,7 @@
 			</ul>
 		</nav>
 		<div class="text-center">
-			<h1 class="pt-6 my-8 text-5xl font-black tracking-tighter text-indigo-500 md:text-6xl ">
+			<h1 class="pt-6 my-8 text-5xl font-bold tracking-tighter text-indigo-500 md:text-6xl ">
 				<nuxt-link to="/" class="">Nick Frostbutter</nuxt-link>
 			</h1>
 		</div>

@@ -3,7 +3,7 @@ published: true
 title: 'Setup font awesome in Vue and NuxtJS'
 intro: 'Fontawesome is pure awesome. Vue and Nuxt are awesome. So why not use Fontawesome with Vue JS or Nuxt JS? Here is how.'
 hero_image: /media/articles/vue/font-aweseome-in-vue-and-nuxt-js.jpg
-date: 2021-12-3
+date: 2021-12-03
 category: dev
 tags:
  - vue
