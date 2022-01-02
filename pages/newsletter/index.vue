@@ -12,21 +12,21 @@
 		</p>
 		
 		<section class="px-1 my-10 space-y-1">
-			<form class="flex items-center justify-center space-x-3 validate" action="https://frostbutter.us2.list-manage.com/subscribe/post?u=ff54f64a9c7c22ff1cd77bb2c&id=6778f6294a" method="post" novalidate>
+			<!-- <form class="flex items-center justify-center space-x-3 validate" action="https://frostbutter.us2.list-manage.com/subscribe/post?u=ff54f64a9c7c22ff1cd77bb2c&id=6778f6294a" method="post" novalidate>
 				<input type="email" value="" class="w-104" name="EMAIL" placeholder="Your best email address" required>
 				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="email" name="b_ff54f64a9c7c22ff1cd77bb2c_6778f6294a" tabindex="-1" value="" required=""></div>
 				<input type="submit" class="" value="Follow along 💌" name="subscribe" />
-			</form>
+			</form> -->
 			
-			<p class="mb-10 text-sm text-center">
-				I usually email about <b>**once a month**</b>, but it does vary from time to time.
-			</p>
-
+			<script async src="https://eocampaign1.com/form/166eac0e-6c10-11ec-96e5-06b4694bee2a.js" data-form="166eac0e-6c10-11ec-96e5-06b4694bee2a"></script>
+			
 		</section>
-		
 
 		<p class="mx-auto text-2xl font-bold text-center">Interested?</p>
-		<p class="mx-auto text-lg text-center">Join my newsletter to get things like these sent to your inbox.<br />Unsubscribe anytime, no hard feelings.</p>
+		<p class="mx-auto text-lg text-center">
+			I usually email about <b>**once a month**</b>, but it does vary from time to time.
+			<br />Unsubscribe anytime, no hard feelings.
+		</p>
 		
 	</div>
 </template>

@@ -7,7 +7,7 @@
                 <div class="flex items-center mt-4 space-x-5 text-xs text-gray-600 dark:text-gray-400">
                     <span class="block whitespace-nowrap md:inline-block">{{ date }} </span>
                     <div v-if="post.tags" class="block md:inline-block">
-                        <span v-for="tag in post.tags" :key="tag">
+                        <span v-for="tag in $utils.tagSpliter(post.tags)" :key="tag">
                             <nuxt-link :to="tag_url(tag)" class="tag indigo">
                                 #{{ tag }}
                             </nuxt-link>

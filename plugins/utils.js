@@ -38,6 +38,20 @@ const utils = {
         // newer browser support 
         return window.navigator.clipboard.writeText(text)
     },
+
+    /*
+        Splits a string by the delimiter (a single comma by default), then trims each item.
+        Also accepts and object.
+        useful for allowing post "tags" to be in a string or array format, splitting the CSL
+    */
+    tagSpliter( tags, delimiter = ',' ){
+        tags = typeof tags == 'string' ? tags.split(delimiter) : tags;
+        
+        if ( typeof tags == 'object' )
+            tags = tags.map( (item) => { return item.trim() });
+
+        return tags;
+    }
 }
 
 export default ({ app }, inject) => {

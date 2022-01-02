@@ -24,19 +24,22 @@
 				{{ /if }}
 			{{ /main_content }} -->
 
-		<newsletter-signup-form />
+		<article-subscribe-form />
+		<!-- <newsletter-signup-form /> -->
 
 	</article>
 </template>
 
 <script>
+import ArticleSubscribeForm from '~/components/ArticleSubscribeForm.vue';
 import AuthorSection from '~/components/blog/AuthorSection.vue';
-import NewsletterSignupForm from '~/components/NewsletterSignupForm.vue';
+// import NewsletterSignupForm from '~/components/NewsletterSignupForm.vue';
 
 export default {
 	components: {
-		NewsletterSignupForm,
-		AuthorSection
+		// NewsletterSignupForm,
+		AuthorSection,
+		ArticleSubscribeForm
 	},
 	async asyncData({ params, error, $content }) {
 		try {

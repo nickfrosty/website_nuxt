@@ -7,7 +7,7 @@
                 {{ date }}
             </p>
             <div v-if="post.tags" class="mt-2 space-x-2">
-                <span v-for="tag in post.tags.slice(0, 2)" :key="tag">
+                <span v-for="tag in $utils.tagSpliter(post.tags.slice(0, 2))" :key="tag">
                     <nuxt-link :to="tag_url(tag)" class="text-base tag indigo">
                         #{{ tag }}
                     </nuxt-link>

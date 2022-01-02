@@ -13,6 +13,6 @@
 				<nuxt-link to="/" class="">Nick Frostbutter</nuxt-link>
 			</h1>
 		</div>
-		<div id="header-divider" class="w-full h-px my-4 transform bg-indigo-600 -rotate-1"></div>
+		<div id="header-divider" class="w-full h-px my-4 transform bg-indigo-500 -rotate-1"></div>
 	</section>
 </template>

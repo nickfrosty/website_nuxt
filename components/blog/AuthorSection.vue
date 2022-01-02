@@ -19,7 +19,7 @@
         </div>
         
         <div v-if="post.tags" class="place-content-end">
-            <span v-for="tag in post.tags" :key="tag" class="inline-block mb-1 space-x-0">
+            <span v-for="tag in $utils.tagSpliter(post.tags)" :key="tag" class="inline-block mb-1 space-x-0">
                 <nuxt-link :to="tag_url(tag)" class="text-base no-underline tag indigo">
                     #{{ tag }}
                 </nuxt-link>
