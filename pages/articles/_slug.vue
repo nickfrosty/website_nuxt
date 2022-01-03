@@ -24,7 +24,7 @@
 				{{ /if }}
 			{{ /main_content }} -->
 
-		<article-subscribe-form />
+		<!-- <article-subscribe-form /> -->
 		<!-- <newsletter-signup-form /> -->
 
 	</article>
@@ -89,7 +89,7 @@ export default {
 		return this.$seo({
 			templateTitle: this.post.template || '%title% - %name%',
 			title: this.post.title || 'Articles',
-			description: this.post.intro || this.post.description || 'Checkout this awesome article. It is super good. You should read it :)',
+			description: this.post.description || this.post.intro || 'Checkout this awesome article. It is super good. You should read it :)',
 			canonical: this.post.canonical || 'auto',
 			openGraph: {
 				image: {

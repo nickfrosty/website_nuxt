@@ -87,7 +87,7 @@ export default {
 		return this.$seo({
 			templateTitle: this.post.template || '%title% - %name%',
 			title: this.post.title || 'Blog',
-			description: this.post.intro || this.post.description || 'Checkout this awesome blog post. As I build in public, I pour my heart and soul into these posts and my newsletter.',
+			description: this.post.description || this.post.intro || 'Checkout this awesome blog post. As I build in public, I pour my heart and soul into these posts and my newsletter.',
 			canonical: this.post.canonical || 'auto',
 			// twitter: {
 				// card: 'summary_large_image',

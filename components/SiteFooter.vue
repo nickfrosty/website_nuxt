@@ -3,7 +3,7 @@
 		<div id="footer-divider" class="w-2/3 h-px mx-auto mb-6 transform bg-indigo-500 md:w-1/3 -rotate-1"></div>
 
 		<div class="flex justify-between max-w-md px-3 mx-auto">
-			<div class="">&copy;2021 Nick Frostbutter</div>
+			<div class="">&copy;2021 <nuxt-link to="/" class="hover:text-black dark:hover:text-white hover:underline" title="Personal Website for Nick Frostbutter">Nick Frostbutter</nuxt-link></div>
 			<div class="flex justify-between space-x-6 text-gray-600 dark:text-gray-600">
 				<a href="https://twitter.com/nickfrosty" aria-label="@nickfrosty on Twitter" target="_blank" class="hover:text-blue-500 no-underline">
 					<!-- <i class="w-5 h-5 fill-current fa fab fa-fw fa-twitter"></i> -->

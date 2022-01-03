@@ -7,15 +7,13 @@
             <p class="font-medium sm:text-2xl">
                 Want more dev articles like these?
             </p>   
-            <p class="mx-8 text-center sm:mx-0 lg:text-left">Subscribe and get them delivered direclty to your inbox  →</p>
+            <p class="mx-6 my-3 text-center sm:mx-0 lg:text-left">Subscribe and get them delivered direclty to your inbox  →</p>
             
-            <script async src="https://eocampaign1.com/form/9729984f-6c14-11ec-96e5-06b4694bee2a.js" data-form="9729984f-6c14-11ec-96e5-06b4694bee2a"></script>
-            
-            <!-- <form class="items-center justify-between my-2 space-y-2 md:space-y-0 md:space-x-3 md:flex validate" action="https://frostbutter.us2.list-manage.com/subscribe/post?u=ff54f64a9c7c22ff1cd77bb2c&id=6778f6294a" method="post" novalidate>
+            <form class="items-center justify-between my-2 space-y-2 md:space-y-0 md:space-x-3 md:flex validate" action="https://frostbutter.us2.list-manage.com/subscribe/post?u=ff54f64a9c7c22ff1cd77bb2c&id=6778f6294a" method="post" novalidate>
                 <input type="email" value="" class="w-full" name="EMAIL" placeholder="Your best email address" required>
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="email" class="mx-auto" name="b_ff54f64a9c7c22ff1cd77bb2c_6778f6294a" tabindex="-1" value="" required=""></div>
-                <input type="submit" class="mx-auto text-center" value="Follow along 💌" name="subscribe" />
-            </form> -->
+                <input type="submit" class="mx-auto text-center" value="👈 subscribers.push(this.email);" name="subscribe" />
+            </form>
         </div>
     </div>
 </template>
