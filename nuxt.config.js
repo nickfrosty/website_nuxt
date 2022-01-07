@@ -68,6 +68,9 @@ export default {
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
+		['nuxt-lazy-load', {
+			defaultImage: '/img/loading.png',
+		}],
 		'nuxt-seo',
 		'@nuxt/content',
 		'@nuxtjs/axios',
