@@ -16,7 +16,7 @@ The thing about trying to install Ghost CMS on Windows is that there a few, let'
 
 (1) To actually install Ghost CMS on Windows, you will need to get the backend server setup. So you will have to install NodeJS server, if you don't already have it. Which most people on Windows don't already have a NodeJS server setup. Since most just using something like XAMPP for a localhost PHP/MySQL server.
 
-(2) After NodeJS is installed, you can use the Node Package Manager (aka npm) to install Ghost blog on Windows. When installing Ghost locally, it will actually use a local SQLite database for you to perform your testing on. No need to worry about having a MySQL database installed and ready to use with Ghost CMS. How nice of them :)
+(2) After NodeJS is installed, you can use the Node Package Manager (aka npm) to install Ghost blog on Windows. When installing Ghost locally, it will actually use a local SQLite database for you to perform your testing on. No need to worry about having a [MySQL database](/articles/restore-mysql-database-from-backup-with-command-line) installed and ready to use with Ghost CMS. How nice of them :)
 
 (3) Once your localhost Ghost blog is installed, you can work your way through the very simple setup wizard to create your account and start getting to know Ghost CMS.
 
