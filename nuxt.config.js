@@ -5,6 +5,8 @@ const seo = require("./modules/seo");
 export default {
 	// Target: https://go.nuxtjs.dev/config-target
 	target: 'static',
+	
+	generate: { fallback: '404.html' },
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
