@@ -18,10 +18,14 @@
   h2,
   h2 a {
     @apply py-6 mt-12 text-4xl font-bold leading-none tracking-tight no-underline;
+    @apply text-indigo-500;
+    text-shadow: 0 0 5px rgb(79 70 229 / 60%);
   }
 
   h3 {
     @apply py-6 text-xl font-bold leading-none;
+    @apply text-yellow-400;
+    text-shadow: 0 0 5px rgb(254 211 24 / 50%);
   }
 
   h4 {
@@ -76,18 +80,18 @@
     @apply inline-block p-1 font-mono text-sm leading-none text-white align-baseline whitespace-nowrap;
   }
 
-  pre,
-  pre&,
-  > ul li pre,
-  > ol li pre {
-    @apply flex p-0 mb-8 text-sm leading-loose;
-  }
-
   pre code,
   pre code&,
   > ul li pre code,
   > ol li pre code {
-    @apply p-4;
+    @apply p-5;
+  }
+
+  pre,
+  pre&,
+  > ul li pre,
+  > ol li pre {
+    @apply flex p-0 mb-8 text-sm leading-loose rounded-md;
   }
 
   table {

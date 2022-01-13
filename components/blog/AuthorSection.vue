@@ -8,7 +8,10 @@
                         {{ author.name }}
                     </a>
                 </div>
-                <time datetime="">{{ post_date }}</time>
+                <span class="text-gray-500">
+                    <span v-if="post.updatedAt">Updated on</span>
+                    <time datetime="">{{ post_date }}</time>
+                </span>
             </div>
         </div>
         <div v-else class="flex items-center justify-center">
@@ -47,7 +50,7 @@ export default {
     },
     computed:{
         post_date(){
-			let date =  this.post.date || this.post.updatedAt || this.post.createdAt; 
+			let date =  this.post.updatedAt || this.post.date || this.post.createdAt; 
 			return new Date(date).toLocaleString("en-US", { dateStyle: 'medium' });
 		},
     },

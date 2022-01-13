@@ -182,8 +182,11 @@ module.exports = {
     inset: ['responsive', 'hover'],
     cursor: ['disabled'],
     opacity: ['disabled'],
+    scrollbar: ['dark'],
     // backgroundColor: ['checked', 'disabled'],
     // borderColor: ['checked', 'disabled'],
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };

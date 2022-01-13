@@ -5,12 +5,19 @@
 body {
   @apply text-gray-700 bg-white;
   @apply dark:text-gray-300 dark:bg-gray-900;
+  @apply scrollbar scrollbar-thin scrollbar-thumb-indigo-500 scrollbar-track-gray-500;
+}
+
+code {
+  @apply scrollbar scrollbar-thin scrollbar-thumb-indigo-500 scrollbar-track-gray-500;
+  @apply rounded-md p-5;
 }
 
 /* Default form elements */
 input[type="text"],
 input[type="email"],
 input[type="url"],
+textarea,
 textbox {
   @apply block px-4 py-3 bg-white border border-gray-200 rounded dark:border-gray-700 dark:bg-gray-800;
 }
