@@ -1,11 +1,10 @@
 ---
 published: true
 title: '🚧 Big plans in the works'
-description: ''
+date: 2022-01-01
 intro: 'New years goals. Most everyone has got them. And most everyone does NOT have a plan.'
 category: personal
 tags: 2022, goals
-date: 2022-01-01
 ---
 
 As the year comes to a close, and the new one begins, most people are creating their new years goals. Planning the thing they "are totally going to do". And I guess I am no different this year. But I am really looking forward to the new year!

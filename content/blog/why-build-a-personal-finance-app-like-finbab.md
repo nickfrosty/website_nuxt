@@ -1,14 +1,11 @@
 ---
 published: true
+date: 2020-10-04 00:00 EST
 title: 'Why I started finbab. Building a personal finance app'
 hero_image: /media/blog/finbab/finbab-why-i-decided-to-create-the-personal-finance-app-finbabcom.jpg
-category:
-    - devlog
-tags:
-    - personal
-    - finbab
+category: devlog
+tags: personal, finbab
 intro: 'The past few years I have found so much enjoyment in the world of finance. So I decided to make my own personal finance app, named finbab.'
-date: 2020-10-04
 ---
 
 Most web developers spend their free time writing code. We love working on projects. So why not make a personal finance app?
@@ -17,7 +14,7 @@ Always having had a passion for web dev and coding, over the past few years I ha
 
 ---
 
-Starting like most due, I made some very simple spreadsheets. Updating them pretty regularly, my wife and I found there was so much more that we wanted out of my _jenky_  spreadsheets. Namely a better interface and more sophisticated tracking.
+Starting like most due, I made some very simple spreadsheets. Updating them pretty regularly, my wife and I found there was so much more that we wanted out of my _janky_  spreadsheets. Namely a better interface and more sophisticated tracking.
 
 After we bought our first house and we on the cusp of our baby being born, we dove in deep down the rabbit hole of our budget. Turns out kids are expensive. Weird. We even got so deep into the spreadsheeting to make one that we could track all of our grocery purchases with. Complete with itemized receipts to help figure out where we could get the best price on our groceries.
 

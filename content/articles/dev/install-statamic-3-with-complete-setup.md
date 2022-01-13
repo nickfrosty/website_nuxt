@@ -4,9 +4,7 @@ title: 'Install Statamic 3 (with complete setup)'
 intro: "Simply put? Statamic is just awesome! It's an open source PHP/Laravel CMS framework built with developers in mind. Awesomeness full of awesome sauce."
 updated_at: 1626134807
 category: dev
-tags:
-  - statamic
-  - php
+tags: statamic, php
 ---
 install node
 

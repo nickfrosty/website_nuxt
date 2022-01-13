@@ -3,11 +3,9 @@ published: true
 title: 'htaccess cache control for a faster website'
 hero_image: /media/articles/htaccess/enable-htaccess-cache-control.jpg
 updated_at: 1626377015
-date: 2021-07-15
+date: 2021-07-15 00:00 EST
 category: dev
-tags:
-  - htaccess
-  - cache
+tags: htaccess, cache
 ---
 
 One of the nifty ways to speed up a website is using some quick htaccess cache control. If you allow your website to cache page content locally, then users will have faster load times of your website as they browse around.

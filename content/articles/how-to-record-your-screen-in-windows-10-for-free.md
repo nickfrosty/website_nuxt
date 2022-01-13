@@ -4,10 +4,8 @@ title: 'How to record your screen in Windows 10 for free'
 intro: 'Record your desktop screen and capture screen video for free using OBS Studio. This free software is cross platform and works on Windows, Linux, or Mac.'
 hero_image: '/media/articles/windows/screen-capture-with-OBS-studios/OBS_STUDIOS-featured.png'
 category: tutorials
-tags:
-  - obs-studio
-  - windows
-date: 2020-07-30
+tags: obs-studio, windows
+date: 2020-07-30 00:00 EST
 ---
 
 With OBS Studio, you can record your computer's screen with a **free and pretty simple setup**. Whether you are trying to make a screencast tutorial or record some game play from your favorite video game, OBS Studios is a great options.

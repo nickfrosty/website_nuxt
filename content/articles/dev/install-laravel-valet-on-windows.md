@@ -1,9 +1,7 @@
 ---
 published: false
 title: 'Install Laravel Valet on Windows'
-tags:
-  - windows
-  - laravel
+tags: windows, laravel
 updated_by: ad4b8f0b-eb08-4f51-912e-6cd619d82f35
 updated_at: 1636643625
 ---

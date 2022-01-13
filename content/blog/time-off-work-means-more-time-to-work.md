@@ -1,13 +1,10 @@
 ---
 published: true
+date: 2021-10-13 00:00 EST
 title: 'Time off work means more time to work'
 intro: 'For a few weeks now, I have been kicking around he idea for a straightforward app that will let me send "link reminders" to myself. Knowing that I had about 2 weeks off of work approaching, I decided to pull the trigger and start planning.'
 category: devlog
-date: 2021-10-13
-tags:
-- devlog
-- boomerang
-- personal
+tags: devlog, boomerang, personal
 ---
 
 Enter [Boomerang.link](https://boomerang.link)

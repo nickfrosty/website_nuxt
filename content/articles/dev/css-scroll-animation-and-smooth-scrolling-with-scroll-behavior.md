@@ -4,12 +4,9 @@ title: 'Add CSS Scroll Animation and Smooth Scrolling'
 intro: "Quick UX tips: turn jerky scrolling into smooth scrolling with a the CSS scroll-behavior property. Make your website's scroll animation buttery smooth."
 hero_image: '/media/articles/ux-tips/css-scroll-behavior-scroll-animation-and-smooth-scrolling.jpg'
 updated_at: 1625882228
-date: 2021-07-06
+date: 2021-07-06 00:00 EST
 category: dev
-tags:
- - css
- - ux-tips
-
+tags: css, ux-tips
 ---
 
 The basic way to add smooth scroll animation is using anchors/indexes on your website. Those are the hashtag urls that you can set inside of a link. By default, if someone clicks on of the link their browser will jerk them down to the location of the anchor/id on the page. No so pretty looking. And certainly not a great user experience.

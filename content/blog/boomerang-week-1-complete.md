@@ -1,13 +1,11 @@
 ---
 published: true
+date: 2021-10-25 00:00 EST
 title: 'Boomerang: Week 1 complete'
 intro: 'With the first week of building Boomerang.link coming to a close, I think I have made some really good progress. A good portion of the basic functionality and design complete, there is really only once "major" portion left. Actually sending the "boomerang" reminders. You know, the core product...'
 hero_image: /media/blog/boomerang/week-1-complete/boomerang.link---landing-page.png
 category: devlog
-date: 2021-10-25
-tags:
-- devlog
-- boomerang
+tags: devlog, boomerang
 ---
 
 Here is the (mostly full) list of things I got done in Week 1. Some are more "manger" some more "maker" style tasks. But all move me towards the 2 week launch goal:
@@ -56,7 +54,7 @@ If you want to share your thoughts on my thoughts (how meta?) then DM on twitter
 
 ## Designing is not my strong suit
 
-Yup. I always find myself taking the most amount of time working on designing products and pages. I can usually think up a decent design in my head. Some sort of vague layout or theme, but turning that into a good front end is time consuming. Maybe it''s because I am not so "artistic" in my abilities, or maybe because good design takes time. Maybe both.
+Yup. I always find myself taking the most amount of time working on designing products and pages. I can usually think up a decent design in my head. Some sort of vague layout or theme, but turning that into a good front end is time consuming. Maybe it's because I am not so "artistic" in my abilities, or maybe because good design takes time. Maybe both.
 
 But after this first week, I am really happy with the theme and progress on design that I have going. It is minimal and lite, while being dark at the same time.
 

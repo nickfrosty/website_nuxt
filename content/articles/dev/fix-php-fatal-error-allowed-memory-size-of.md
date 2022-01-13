@@ -3,11 +3,9 @@ published: true
 title: 'Fix PHP fatal error "allowed memory size of"'
 intro: 'Fatal errors in PHP are no joke. Running out of "allowed memory" can cause your website to crash. Luckily to fixing the "allowed memory size of" usually only takes a single edit. Even on WordPress.'
 hero_image: /media/articles/php-errors/php-memory-limit-thumbnail-1.png
-date: 2021-04-01
+date: 2021-04-01 00:00 EST
 category: dev
-tags:
-  - php
-  - wordpress
+tags: php, wordpress
 ---
 
 This fatal error occurs when your web app or website is using too much memory. Plain and simple. Just like a local application running on your computer, your website takes some amount of memory to run. So at your site runs on your hosting provider's servers, you are using up some of that server's memory, known as RAM.

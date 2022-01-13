@@ -3,11 +3,9 @@ published: true
 title: 'Redirect http to https: force https with htaccess'
 intro: 'These days, if your site does not force https then it may not be secure. Chrome, Brave, and Firefox will give nasty security warnings to your users if you site is not secured with https/ssl.'
 hero_image: /media/articles/htaccess/force-https-with-htaccess-redirect-http-to-https.jpg
-date: 2021-07-10
+date: 2021-07-10 00:00 EST
 category: dev
-tags:
- - htaccess
- - litespeed
+tags: htaccess, litespeed
 ---
 
 
@@ -87,7 +85,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 If you are are trying to force https on WordPress, then you have a few options. You can edit the already included **.htaccess** file in your public website directory just like above. Simply grab those 2 lines of htaccess config above and place it before all the other RewriteCond/RewriteRule statements, and you are ready to go.
 
-If you do not feel comfortable editing this file (and that's cool too), there are a couple of free plugins for WordPress that handle this niceley: like [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) and [WP Force SSL](https://wordpress.org/plugins/wp-force-ssl/).
+If you do not feel comfortable editing this file (and that's cool too), there are a couple of free plugins for WordPress that handle this nicely: like [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) and [WP Force SSL](https://wordpress.org/plugins/wp-force-ssl/).
 
 ## Force http on localhost (https everywhere else)
 

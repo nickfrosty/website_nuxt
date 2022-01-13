@@ -3,9 +3,8 @@ published: true
 title: 'Creating a personal brand'
 intro: 'I have been tossing and turning on the idea for basically years. Swaying back and forth, with varying levels of commitment, on building a "personal brand" for all of my content online.'
 category: blog
-date: 2021-11-11
-tags:
-- personal
+date: 2021-11-11 00:00 EST
+tags: personal, branding
 ---
 The biggest problem I think I have is a mental one.
 

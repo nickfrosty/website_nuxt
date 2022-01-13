@@ -3,12 +3,9 @@ published: true
 title: 'Setup font awesome in Vue and NuxtJS'
 intro: 'Fontawesome is pure awesome. Vue and Nuxt are awesome. So why not use Fontawesome with Vue JS or Nuxt JS? Here is how.'
 hero_image: /media/articles/vue/font-aweseome-in-vue-and-nuxt-js.jpg
-date: 2021-12-03
+date: 2021-12-03 00:00 EST
 category: dev
-tags:
- - vue
- - font-awesome
- - nuxt
+tags: vue, font-awesome, nuxt
 ---
 
 If you have been living under a rock for several years and don't know, Fontawesome a wonderful icon library. It's open source, SVG based, and can be used on any website like utility classes.

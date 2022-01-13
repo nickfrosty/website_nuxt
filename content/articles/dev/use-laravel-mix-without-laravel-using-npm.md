@@ -3,12 +3,9 @@ published: true
 title: 'Use Laravel Mix without Laravel (using npm)'
 intro: "Laravel Mix is a great tool to smooth out your development process. But I don't use Laravel. But you can still get the magic sauce of Laravel Mix without Laravel, using npm"
 hero_image: '/media/articles/laravel/laravel-mix-without-laravel-with-npm.jpg'
-date: 2021-05-03
+date: 2021-05-03 00:00 EST
 category: dev
-tags:
-- laravel
-- npm
-- tailwind
+tags: laravel, npm, tailwind
 ---
 After hours of trial and error, here is how to actually setup and use Laravel mix **WITHOUT** actually using the Laravel framework. Using npm.
 

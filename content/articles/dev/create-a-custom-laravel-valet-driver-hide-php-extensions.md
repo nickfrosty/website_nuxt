@@ -4,12 +4,11 @@ title: 'Create a custom Laravel Valet driver'
 intro: 'Valet is wonderful. So wonderful that I use it on custom apps that do NOT use Laravel. For my custom web apps, I created a custom Valet driver to get those sweet ".test" websites. Works like a charm.'
 hero_image: /media/articles/laravel/create-a-custom-laravel-valet-driver-hide-php-extensions.jpg
 updated_at: 1625947366
-date: 2021-07-09
+date: 2021-07-09 00:00 EST
 category: dev
-tags:
-  - laravel
-  - valet
+tags: laravel, valet, php
 ---
+
 I mean it. Valet is the best! Perfect for the a solid, lightweight, and minimal development environment. You can link your project's directory then browse to the project using a ".test" domain. So clean.
 
 The problem that I faced was that I don't use Laravel. A sin for a php developer I know. So in order to be able to use Valet style ".test" domains for my custom web apps, I must create a custom Valet driver for your app. Luckily, if you write it once (or use mine) then you will be set until Valet or Laravel changes a bunch. So basically, forever 🤞
@@ -51,7 +50,8 @@ The **serves()** function is used to determine if the current web app should use
 - **$siteName**: the name that your valet site (e.g. _mysweetapp_); the same name used for your .test site (e.g. _mysweetapp.test_)
 - **$uri**: the actual uri from the browser request; say you visit mysweetapp.test/contact, the uri is "contact". If you browse to _mysweetapp.test_, the uri is _empty_
 
-The logic inside the function is simple. We check for specific files that are specific to the web app or CMS you want to use this custom driver for. WordPress for example would check for wp-config.php. 
+The logic inside the function is simple. We check for specific files that are specific to the web app or CMS you want to use this custom driver for. WordPress for example would check for `wp-config.php`.
+
 ```php
 /**
 * Determine if the driver serves the request.

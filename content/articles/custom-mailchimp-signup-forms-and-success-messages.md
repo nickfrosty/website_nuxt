@@ -4,10 +4,8 @@ title: 'Custom MailChimp signup forms and success messages'
 intro: 'Improve your email marketing efforts with custom MailChimp signup forms? Yes please!'
 hero_image: /media/articles/mailchimp/custom-mailchimp-signup-forms-and-success-messages-3.jpg
 category: marketing
-tags:
-  - mailchimp
-  - newsletters
-date: 2021-03-21
+tags: mailchimp, newsletters
+date: 2021-03-21 00:00 EST
 ---
 
 One of the sweetest features of most popular email marketing software is custom signup forms. You can host your own MailChimp signup forms on your website. Even have custom embedded form success messages.

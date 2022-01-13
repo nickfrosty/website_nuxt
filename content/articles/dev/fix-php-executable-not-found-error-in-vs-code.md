@@ -3,14 +3,11 @@ published: true
 title: 'Fix "PHP executable not found" error in VS Code'
 intro: 'Good news: you can easily get rid of that pesky "PHP executable not found" error message in VS Code in a few minutes. Install PHP then, add it to your PATH variable, then error-be-gone!'
 hero_image: /media/articles/vs-code/fix-php-executable-not-found/Fix-PHP-executable-not-found-error-in-Visual-Studio-Code-VS-Code.png
-date: 2021-04-05
-updated_at: 1625881802
+date: 2021-04-05 00:00 EST
 category: dev
-tags:
-- vs-code
-- php
-- windows
+tags: vs-code, php, windows
 ---
+
 Nobody likes errors, least of all computer programmers!
 
 If you are a PHP developer and recently installed Visual Studio Code (VS Code), then you are most likely getting a pesky "PHP executable not found" error message every time you start the program.
