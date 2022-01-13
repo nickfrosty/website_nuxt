@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <nuxt-link :to="url"><img :class="oversized ? '' : ''" class="block" height="285" :src="image" :alt="post.title"></nuxt-link>
+        <nuxt-link v-if="image" :to="url"><img :class="oversized ? '' : ''" class="block" height="285" :src="image" :alt="post.title"></nuxt-link>
         <div class="px-8 py-6">
             <h2><nuxt-link :to="url" class="text-2xl font-bold leading-tight text-gray-800 dark:text-gray-300 hover:text-hot-pink">{{ post.title  }}</nuxt-link></h2>
             <p class="flex items-center mt-4 text-xs text-gray-600">
