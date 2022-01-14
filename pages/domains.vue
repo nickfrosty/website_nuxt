@@ -45,13 +45,13 @@ export default {
 			title: 'Domains',
 			description: 'I have a problem. I have lots of domain names. Too many. Want one? Let me know! @nickfrosty',
 			// canonical: '',
-			// twitter: {
-				// card: 'summary_large_image',
+			twitter: {
+				card: 'summary_large_image',
 				// url: '/',
-				// title: '<local page title>',
-				// description: '<local page desc>',
-				// image: '<local page image>',
-			// }, 
+				// title: '',
+				description: 'Awesome, hand curated, domains names that I have gathered. They are all for sale!',
+				image: '/media/domains.jpg',
+			}, 
 		})
 	},
     data(){
@@ -141,7 +141,7 @@ export default {
                     expiration: 'Feb 19, 2022',
                     descriptions: '',
                     icon: '/media/projects/logos/adilic.svg',
-                    tags: '',
+                    tags: 'ads, advertise, advert, marketing, content',
                 },
                 {
                     name: 'upsle.com',
@@ -149,7 +149,7 @@ export default {
                     expiration: 'Feb 9, 2023',
                     descriptions: '',
                     icon: '/media/projects/logos/upsle.svg',
-                    tags: '',
+                    tags: 'up, time, monitor, monitoring, robot, check, checker, social',
                 },
                 
                 {
@@ -157,7 +157,7 @@ export default {
                     tld: 'com',
                     expiration: 'Jun 28, 2022',
                     descriptions: '',
-                    tags: '',
+                    tags: 'faq, help, facts, questions, ask, forum, post, share, social',
                     icon: '/media/projects/logos/faq.svg',
                     viewLarge: true,
                 },
@@ -167,21 +167,21 @@ export default {
                     expiration: 'Jun 28, 2022',
                     descriptions: '',
                     // icon: '/media/projects/logos/upsle.svg',
-                    tags: '',
+                    tags: 'brand, marketing, social, twitter, brandable, believe, undo',
                 },
                 {
                     name: 'upmix.co',
                     tld: 'co',
                     expiration: 'Jun 30, 2022',
                     descriptions: '',
-                    tags: '',
+                    tags: 'mix, mixer, brandable, saas, software, startup',
                 },
                 {
                     name: 'clerq.co',
                     tld: 'co',
                     expiration: 'Jun 30, 2022',
                     descriptions: '',
-                    tags: '',
+                    tags: 'finance, money, tracker, tracking, bills, clerk, desk, help',
                 },
 
                 {
@@ -189,7 +189,7 @@ export default {
                     tld: 'dev',
                     expiration: 'Mar 24, 2022',
                     descriptions: '',
-                    tags: '',
+                    tags: 'gem, gems, ruby, code, dev, program, jems, jem, jema',
                     icon: '/media/projects/logos/gema.svg',
                     // viewLarge: true,
                 },
@@ -198,7 +198,7 @@ export default {
                     tld: 'dev',
                     expiration: 'Mar 24, 2022',
                     descriptions: '',
-                    tags: '',
+                    tags: 'genie, wizard, dev, code, developer, software, articles',
                     icon: '/media/projects/logos/genie.svg',
                     // viewLarge: true,
                 },
@@ -208,7 +208,7 @@ export default {
                     expiration: 'Feb 19, 2022',
                     descriptions: '',
                     icon: '/media/projects/logos/download.svg',
-                    tags: '',
+                    tags: 'file, sharing, share, downloads, upload, track, dropbox, drop, links, gumroad',
                 },
                 {
                     name: 'eatt.app',
@@ -216,7 +216,7 @@ export default {
                     expiration: 'Jun 28, 2022',
                     descriptions: '',
                     icon: '/media/projects/logos/bowl.svg',
-                    tags: '',
+                    tags: 'eat, food, restraunt, restaraunt, cook, bake, app, saas, software, recipes',
                     viewLarge: true,
                 },
                 {
@@ -225,7 +225,7 @@ export default {
                     expiration: 'Jul 9, 2022',
                     descriptions: '',
                     icon: '/media/projects/logos/pot.svg',
-                    tags: '',
+                    tags: 'pot, weed, garden, bake, baked, brownie, edibles, recipes',
                     viewLarge: true,
                 },
                 {
