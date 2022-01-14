@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 date: 2022-01-17 00:00 EST
 updatedAt: false
 title: 'Deploy NuxtJS SSG with Cloudflare Pages'
