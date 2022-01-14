@@ -45,12 +45,12 @@ export default {
 			title: 'Domains',
 			description: 'I have a problem. I have lots of domain names. Too many. Want one? Let me know! @nickfrosty',
 			// canonical: '',
+			image: 'https://frostbutter.com/media/domains.jpg',
 			twitter: {
 				card: 'summary_large_image',
 				// url: '/',
 				// title: '',
 				description: 'Awesome, hand curated, domains names that I have gathered. They are all for sale!',
-				image: 'https://frostbutter.com/media/domains.jpg',
 			}, 
 		})
 	},
