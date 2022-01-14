@@ -50,7 +50,7 @@ export default {
 				// url: '/',
 				// title: '',
 				description: 'Awesome, hand curated, domains names that I have gathered. They are all for sale!',
-				image: '/media/domains.jpg',
+				image: 'https://frostbutter.com/media/domains.jpg',
 			}, 
 		})
 	},

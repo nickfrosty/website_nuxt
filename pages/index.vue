@@ -19,6 +19,10 @@
 			
 			</div>
 
+			<div class="col-span-2 mt-5 space-x-5 text-center md:mt-10 lg:mt-5 lg:text-left">
+				<nuxt-link to="/domains" class="block mt-10 ml-10 text-lg font-medium link">Checkout my domains for sale →</nuxt-link>
+			</div>
+
 			<!-- <newsletter-signup-form /> -->
 
 		</div>
