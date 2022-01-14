@@ -45,7 +45,11 @@ export default {
 			title: 'Domains',
 			description: 'I have a problem. I have lots of domain names. Too many. Want one? Let me know! @nickfrosty',
 			// canonical: '',
-			image: 'https://frostbutter.com/media/domains.jpg',
+			openGraph: {
+				image: {
+					url: 'https://frostbutter.com/media/domains.jpg',
+				},
+			},
 			twitter: {
 				card: 'summary_large_image',
 				// url: '/',
