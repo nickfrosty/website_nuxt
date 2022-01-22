@@ -1,6 +1,6 @@
 ---
 published: true
-status: graveyard
+status: autopilot
 name: 'HeyTuts.com'
 url: https://heytuts.com
 sortDate: 2010

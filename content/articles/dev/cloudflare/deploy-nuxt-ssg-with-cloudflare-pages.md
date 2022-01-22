@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 date: 2022-01-17 00:00 EST
 updatedAt: false
 title: 'Deploy NuxtJS SSG with Cloudflare Pages'
 intro: 'Effortless static site generation directly from your Git repo, with automated deployments and git previews? All for free? Sounds perfect!'
 description: ''
-# hero_image: /media/articles/mysql/backup-and-restore-mysql-databasse-from-command-line.jpg
+hero_image: /media/articles/cloudflare/deploy-nuxtjs-ssg/deploy-nuxtjs-ssg-with-cloudflare-pages-light3.jpg
 category: dev
 tags: nuxt, ssg, cloudflare
 ---

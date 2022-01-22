@@ -1,6 +1,6 @@
 ---
 published: true
-status: autopilot
+status: graveyard
 name: 'Spacebird.io'
 url: https://spacebird.io
 timeperiod: 2021
