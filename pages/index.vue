@@ -34,7 +34,7 @@
             </div>
 
             <ul
-                class="col-span-2 mt-5 ml-10 space-y-5 text-lg font-medium text-center  md:mt-10 lg:mt-5 lg:text-left"
+                class="col-span-2 mt-5 ml-10 space-y-5 text-lg font-medium text-center  md:mt-10 xl:mt-14 lg:text-left"
             >
                 <li class="">
                     <!-- <nuxt-link to="/about" class="link">
@@ -50,7 +50,7 @@
             </ul>
         </section>
 
-        <section class="grid gap-8">
+        <section class="grid gap-8 xl:gap-12">
             <newsletter-signup-form class="order-1 md:order-2" />
 
             <!-- projects -->
