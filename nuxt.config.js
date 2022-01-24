@@ -111,9 +111,9 @@ export default {
 		title: '',
 		templateTitle: '%name% — %title%',
 		description: "Hi! I'm Nick, an indie developer working on interesting projects. Including writing code, building in my workshop, and creating content online.",
-		keywords: 'indie, developer, saas, founder, nuxt, php, dev, tutorials',
+		keywords: 'indie, developer, saas, founder, nuxt, vuejs, php, dev, tutorials',
 		canonical: 'auto',
-		isForcedTrailingSlash: false,
+		isForcedTrailingSlash: true,
 		// social defaults
 		author: 'Nick Frostbutter',
 		twitter: {

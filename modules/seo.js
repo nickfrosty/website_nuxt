@@ -44,7 +44,7 @@ exports.createSitemapFromContent = async (args) => {
                 loader.then((posts) => {
                     if ( posts && posts.length > 0 ){
                         posts.forEach((post) => {
-                            routes.push(`${options.prefix || options.path}/${post.slug}`);
+                            routes.push(`${options.prefix || options.path}/${post.slug}/`);
                         });
                     }
                 });
@@ -92,7 +92,7 @@ exports.createFeedFromContent = async (feed, args) => {
 	// process each post and add to the feed
 	posts.forEach((post) => {
 		// the url of the post is set first
-		const url = `${hostname}/${contentPath}/${post.slug}`;
+		const url = `${hostname}/${contentPath}/${post.slug}/`;
 		const image = post.hero_image ? `${hostname}${post.hero_image}` : null;
 		let content = (image ? `<p><img alt="${post.title}" title="${post.title}" src="${image}"></p>\n` : '') + post.bodyPlainText;
 
