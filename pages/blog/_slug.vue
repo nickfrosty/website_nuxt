@@ -104,7 +104,7 @@ export default {
             openGraph: {
                 image: {
                     url:
-                        `"https://frostbutter.com` +
+                        `https://frostbutter.com` +
                         (this.post.image || "/img/nick.jpg"),
                 },
             },
