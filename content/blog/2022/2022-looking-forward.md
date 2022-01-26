@@ -1,7 +1,7 @@
 ---
 published: true
 title: '🚧 Big plans in the works'
-date: 2022-01-01
+date: 2022-01-01 00:00 EST
 intro: 'New years goals. Most everyone has got them. And most everyone does NOT have a plan.'
 category: personal
 tags: 2022, goals
