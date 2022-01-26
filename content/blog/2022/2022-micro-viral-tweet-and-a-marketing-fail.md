@@ -3,14 +3,12 @@ published: true
 date: 2022-01-26 00:00 EST
 title: 'A micro viral tweet and a marketing fail'
 description: 'With a single tweet and single IndieHackers post, I went "micro viral". This is the breakdown of how I failed at marketing.'
-intro: ''
+intro: 'With a single tweet and single IndieHackers post, I went "micro viral". This is the breakdown of how I failed at marketing.'
 image: '/media/blog/micro-viral/thumb-micro-viral-tweet-and-a-marketing-fail.jpg'
 hero_image: '/media/blog/micro-viral/twitter-followers.png'
 category: devlog
 tags: 2022, marketing, twitter
 ---
-
-With a single tweet and single IndieHackers post, I went "micro viral". This is the breakdown of how I failed at marketing.
 
 So here is the gist:
 
@@ -188,7 +186,8 @@ For these "*marketing efforts*", a few things have stood out to me:
 - people on social will often scroll past long content, especially if it is not from someone they are not familiar with
 
 >> and (sadly) 😢 
-some people will try to force their product in your face. unsolicited. 
+
+Some people will try to force their product in your face. unsolicited. 
 >> (don't be this person. nobody likes them.)
 
 ### How to do it?
