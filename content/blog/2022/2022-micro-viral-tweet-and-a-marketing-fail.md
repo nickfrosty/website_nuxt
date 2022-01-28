@@ -39,7 +39,7 @@ But this one tweet got loads more than my normal. A little over 15k impressions.
 
 ## The tweet
 
-As part of my goal to [#buildinpublic](https://twitter.com/nickfrosty/status/1477021010591420418?s=20), I have been more active on twitter. Posting more regularly, including use "tweet scheduler" tools like TweetDeck to queue up some posts to automatically send out when I am at my day job. Nothing to extravagant, just 1 post a day.
+As part of my goal to [#buildinpublic](https://twitter.com/nickfrosty/status/1477021010591420418?s=20), I have been more active on twitter. Posting more regularly, including use "tweet scheduler" tools like TweetDeck to queue up some posts to automatically send out when I am at my day job. Nothing too extravagant, just 1 post a day.
 
 This [micro viral tweet](https://twitter.com/nickfrosty/status/1484867190159556608?s=20) that I had was one of these such queued tweets. 
 
@@ -71,7 +71,7 @@ There was also another portion to this adventure.
 
 ### The IndieHackers post stats
 
-Not only did my tweet of basically the same question do pretty well, but so did the IH post too! It was on the front page of IH for almost a whole day, which was super cool for me 😊 (In fact, it was one of my new twitter friends [@maximehugodupre](https://twitter.com/maximehugodupre) that pointed it out to me. He was also [trending on IHs](https://www.indiehackers.com/post/gave-up-300k-yr-as-a-blockchain-dev-to-make-a-pomodoro-timer-ama-5592789895) too)
+Not only did my tweet of basically the same question do pretty well, but so did the IH post too! It was on the front page of IH for almost a whole day, which was super cool for me 😊 (In fact, it was one of my new twitter friends [@maximehugodupre](https://twitter.com/maximehugodupre) that pointed it out to me. He was also [trending on IndieHackers](https://www.indiehackers.com/post/gave-up-300k-yr-as-a-blockchain-dev-to-make-a-pomodoro-timer-ama-5592789895) too)
 
 ![screenshot of the IndieHacker's post stats](/media/blog/micro-viral/indiehackers-post.png)
 
@@ -93,7 +93,7 @@ After all of this new people "discovering" me, and striking up conversations, I 
 - Starting follower count: ~300
 - Ending follower found: ~450
 
-Not the "wholly crap I just landed on the moon" level of followers, at least not for some people. But it was a 50% boost in the number of twitter friends I have now! And I think that is pretty cool! 😎
+Not the "holy crap I just landed on the moon" level of followers, at least not for some people. But it was a 50% boost in the number of twitter friends I have now! And I think that is pretty cool! 😎
 
 As far as the tweet stats screenshot from above saying "0 followers", I assume that Twitter has some weird way they are counting the new follows. My guess is that lots of people clicked to view my profile, then followed from their. But were no longer viewing the tweet when they followed, so it didn't count them on the tweet? idk. Pure speculation.
 
@@ -202,7 +202,7 @@ Nobody likes it when you send a cold hearted message trying to force a product o
 
 The important thing is to just show up every day. Make progress everyday. Connect with people.
 
-By for now 👋
+Bye for now 👋
 
 --- 
 
