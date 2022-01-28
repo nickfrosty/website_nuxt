@@ -1,5 +1,7 @@
-/finance* /blog
-/lifestyle* /blog
-/article/custom-mailchimp-signup-forms-and-success-messages* /articles/custom-mailchimp-signup-forms-and-success-messages/
-/howto/setup-multiple-paypal-business-accounts-and-emails* /articles
-/howto/how-to-setup-a-paypal-business-account-in-6-easy-steps/* /articles
+/contact* /newsletter/ 301
+/finance* /blog/ 301
+/business* /blog/ 301
+/lifestyle* /blog/ 301
+/article/custom-mailchimp-signup-forms-and-success-messages* /articles/custom-mailchimp-signup-forms-and-success-messages/ 301
+/howto/setup-multiple-paypal-business-accounts-and-emails* /articles/ 301
+/howto/how-to-setup-a-paypal-business-account-in-6-easy-steps/* /articles/ 301
