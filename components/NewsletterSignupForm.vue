@@ -13,7 +13,14 @@
                 here.
             </p>
             <form
-                class="items-center justify-between my-3 space-y-2  md:space-y-0 md:space-x-3 md:flex validate"
+                class="
+                    items-center
+                    justify-between
+                    my-3
+                    space-y-2
+                    md:space-y-0 md:space-x-3 md:flex
+                    validate
+                "
                 action="https://frostbutter.us2.list-manage.com/subscribe/post?u=ff54f64a9c7c22ff1cd77bb2c&id=6778f6294a"
                 method="post"
             >
@@ -49,7 +56,10 @@
 
             <p class="text-center sm:mx-0 dark:text-gray-400">
                 PS: You can also follow on Twitter -
-                <a target="_blank" href="https://twitter.com/nickfrosty"
+                <a
+                    target="_blank"
+                    class="link"
+                    href="https://twitter.com/nickfrosty"
                     >@nickfrosty</a
                 >
             </p>
