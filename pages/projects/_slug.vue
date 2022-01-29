@@ -51,6 +51,9 @@ export default {
             const [project] = await $content("projects", { deep: true })
                 .where({ slug: params.slug })
                 .fetch();
+
+            if (!project) throw new Error("Not found");
+
             return { project };
         } catch (err) {
             error({

@@ -1,51 +1,19 @@
 <template>
     <section
-        class="
-            grid
-            items-center
-            max-w-6xl
-            grid-cols-1
-            gap-10
-            mx-auto
-            mt-4
-            md:gap-32
-            sm:mt-8
-            lg:grid-cols-2
-        "
+        class="grid items-center max-w-6xl grid-cols-1 gap-10 mx-auto mt-4  md:gap-32 sm:mt-8 lg:grid-cols-2"
     >
         <section
-            class="
-                grid grid-cols-2
-                gap-10
-                sm:gap-5
-                md:gap-10 md:items-center
-                lg:block
-            "
+            class="grid grid-cols-2 gap-10  sm:gap-5 md:gap-10 md:items-center lg:block"
         >
-            <div
-                class="
-                    block
-                    col-span-2
-                    mx-auto
-                    mb-5
-                    text-center
-                    auto-cols-auto
-                    sm:col-span-1
-                    md:text-left
-                "
+            <nuxt-link
+                to="/"
+                class="block col-span-2 mx-auto mb-5 text-center  auto-cols-auto sm:col-span-1 md:text-left"
             >
                 <img
-                    class="
-                        border border-gray-300
-                        rounded-full
-                        shadow
-                        w-60
-                        h-60
-                        lg:w-32 lg:h-32
-                    "
+                    class="border border-gray-300 rounded-full shadow  w-60 h-60 lg:w-32 lg:h-32"
                     src="/img/nick.jpg"
                 />
-            </div>
+            </nuxt-link>
 
             <p class="col-span-2 text-2xl font-medium sm:col-span-1">
                 <span class="inline-block mb-5 text-3xl lg:mb-0 lg:text-2xl">
@@ -64,31 +32,13 @@
             </p>
 
             <div
-                class="
-                    col-span-2
-                    mt-5
-                    space-x-5
-                    text-center
-                    md:mt-10
-                    lg:mt-5 lg:text-left
-                "
+                class="col-span-2 mt-5 space-x-5 text-center  md:mt-10 lg:mt-5 lg:text-left"
             >
                 <social-icons></social-icons>
             </div>
 
             <ul
-                class="
-                    col-span-2
-                    mt-5
-                    ml-10
-                    space-y-5
-                    text-lg
-                    font-medium
-                    text-center
-                    md:mt-10
-                    xl:mt-14
-                    lg:text-left
-                "
+                class="col-span-2 mt-5 ml-10 space-y-5 text-lg font-medium text-center  md:mt-10 xl:mt-14 lg:text-left"
             >
                 <li class="">
                     <!-- <nuxt-link to="/about" class="link">
@@ -127,14 +77,7 @@
                 </h2>
 
                 <div
-                    class="
-                        grid grid-cols-1
-                        gap-4
-                        mb-3
-                        space-y-3
-                        lg:block
-                        md:grid-cols-2
-                    "
+                    class="grid grid-cols-1 gap-4 mb-3 space-y-3  lg:block md:grid-cols-2"
                 >
                     <div
                         v-for="project in active_projects.slice(0, 3)"
