@@ -38,7 +38,7 @@
             </div>
 
             <ul
-                class="col-span-2 mt-5 ml-10 space-y-5 text-lg font-medium text-center  md:mt-10 xl:mt-14 lg:text-left"
+                class="col-span-2 space-y-5 text-lg font-medium text-center  md:mt-10 xl:mt-14 lg:text-left"
             >
                 <li class="">
                     <!-- <nuxt-link to="/about" class="link">
@@ -66,13 +66,11 @@
         </section>
 
         <section class="grid gap-8 xl:gap-12">
-            <newsletter-signup-form class="order-1 md:order-2" />
-
             <!-- projects -->
             <div class="order-2 md:order-1" v-if="active_projects">
                 <hr class="mb-14 md:hidden" />
 
-                <h2 class="mt-10 mb-5 text-3xl font-bold text-center lg:hidden">
+                <h2 class="my-10 text-3xl font-bold text-center lg:hidden">
                     My Current Projects
                 </h2>
 
@@ -103,7 +101,6 @@
 
 <script>
 import ProjectCard from "~/components/projects/ProjectCard.vue";
-import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 import SocialIcons from "~/components/SocialIcons.vue";
 
 export default {
@@ -111,7 +108,6 @@ export default {
     components: {
         ProjectCard,
         SocialIcons,
-        NewsletterSignupForm,
     },
     async asyncData({ params, error, $content }) {
         try {
