@@ -13,7 +13,7 @@
             <a
                 class="link"
                 target="_blank"
-                href="https://shard-piper-911.notion.site/2022-Get-things-done-df66e4729bd84b68bfaf16e74b7b4b51"
+                href="https://nickfrosty.notion.site/2022-Get-things-done-df66e4729bd84b68bfaf16e74b7b4b51"
                 >2022 notion doc</a
             >
             where you can <br />see all my weekly progress as I am building in

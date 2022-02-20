@@ -40,7 +40,7 @@ I also created a notion doc to help me record my progress each day towards each 
 
 Any one who wants to see my progress (or copy the template), you are more than welcome to check it out. It is public with read-only access: 
 
-> https://shard-piper-911.notion.site/2022-Get-things-done-df66e4729bd84b68bfaf16e74b7b4b51
+> https://nickfrosty.notion.site/2022-Get-things-done-df66e4729bd84b68bfaf16e74b7b4b51
 
 The doc has the yearly goals displayed right at the top, so every time I open it, **BAM**!!! They are right there. 
 
