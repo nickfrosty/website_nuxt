@@ -45,7 +45,7 @@
                 class="item"
                 v-for="domain in domains"
                 :key="domain.id"
-                :class="domain.viewLarge ? 'large' : 'small'"
+                :class="true || domain.viewLarge ? 'large' : 'small'"
             >
                 <div class="flex items-center gap-3">
                     <img
@@ -154,24 +154,24 @@ export default {
                     icon: "/media/projects/logos/crafted.svg",
                     viewLarge: false,
                 },
-                {
-                    name: "creators.fm",
-                    tld: "fm",
-                    expiration: "",
-                    descriptions: "",
-                    tags: "podcast, create, share, build, public, audio, record",
-                    icon: "/media/projects/logos/creators.svg",
-                    // viewLarge: true,
-                },
+                // {
+                //     name: "creators.fm",
+                //     tld: "fm",
+                //     expiration: "",
+                //     descriptions: "",
+                //     tags: "podcast, create, share, build, public, audio, record",
+                //     icon: "/media/projects/logos/creators.svg",
+                //     // viewLarge: true,
+                // },
 
-                {
-                    name: "adilic.com",
-                    tld: "com",
-                    expiration: "Feb 19, 2022",
-                    descriptions: "",
-                    icon: "/media/projects/logos/adilic.svg",
-                    tags: "ads, advertise, advert, marketing, content",
-                },
+                // {
+                //     name: "adilic.com",
+                //     tld: "com",
+                //     expiration: "Feb 19, 2022",
+                //     descriptions: "",
+                //     icon: "/media/projects/logos/adilic.svg",
+                //     tags: "ads, advertise, advert, marketing, content",
+                // },
                 {
                     name: "upsle.com",
                     tld: "com",
@@ -334,13 +334,13 @@ export default {
                     tags: "",
                     icon: "/media/projects/logos/page.svg",
                 },
-                {
-                    name: "banter.fm",
-                    tld: "fm",
-                    expiration: "Feb 19, 2022",
-                    descriptions: "",
-                    tags: "",
-                },
+                // {
+                //     name: "banter.fm",
+                //     tld: "fm",
+                //     expiration: "Feb 19, 2022",
+                //     descriptions: "",
+                //     tags: "",
+                // },
                 {
                     name: "backpanel.co",
                     tld: "co",
@@ -567,14 +567,6 @@ export default {
                     tags: "",
                 },
                 {
-                    name: "oxzip.com",
-                    tld: "com",
-                    expiration: "",
-                    descriptions: "",
-                    tags: "",
-                },
-
-                {
                     name: "podello.com",
                     tld: "com",
                     expiration: "Jun 28, 2022",
@@ -611,13 +603,6 @@ export default {
                     name: "miniwiki.org",
                     tld: "org",
                     expiration: "May 14, 2022",
-                    descriptions: "",
-                    tags: "",
-                },
-                {
-                    name: "greatname.org",
-                    tld: "org",
-                    expiration: "Mar 12, 2022",
                     descriptions: "",
                     tags: "",
                 },
@@ -694,7 +679,7 @@ export default {
     @apply w-10 h-10 rounded sm:w-12 sm:h-12;
 }
 .item {
-    @apply items-center justify-between block p-3 lg:p-5;
+    @apply items-center justify-between block p-5 lg:p-5;
     @apply space-y-3 text-xl font-black text-center;
     @apply rounded-lg shadow border;
     @apply border-gray-300 dark:border-gray-700;
