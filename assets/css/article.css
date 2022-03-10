@@ -38,12 +38,14 @@
   > p:first-of-type {
     @apply text-xl md:text-2xl;
   }
+
+  > blockquote > p,
   > blockquote {
     @apply px-4 pt-6 mb-12 text-3xl italic font-bold leading-tight text-center;
   }
 
-  > blockquote > p {
-    @apply text-3xl leading-tight;
+  > blockquote > blockquote > p {
+    @apply text-xl leading-tight;
   }
 
   > p > img,

@@ -78,6 +78,15 @@ export default {
             if (image.substring(0, 7) != "/media/") image = `/media/${image}`;
             return image;
         },
+        social_image() {
+            let image = this.post.social_image || this.image;
+            if (!image) return false;
+            // remove '/static/' from the path
+            if (image.substring(0, 8) != "/static/") image = image.substring(7);
+            // force add '/media/' if not already there
+            if (image.substring(0, 7) != "/media/") image = `/media/${image}`;
+            return image;
+        },
         author() {
             return {
                 name: "Nick Frostbutter",
@@ -98,13 +107,13 @@ export default {
             canonical: this.post.canonical || "auto",
             openGraph: {
                 image: {
-                    url: this.image
-                        ? `https://frostbutter.com${this.image}`
+                    url: this.social_image
+                        ? `https://frostbutter.com${this.social_image}`
                         : "https://frostbutter.com/img/nick.jpg",
                 },
             },
             twitter: {
-                card: this.image ? "summary_large_image" : "summary",
+                card: this.social_image ? "summary_large_image" : "summary",
                 // url: '/',
                 // title: '<local page title>',
                 // description: '<local page desc>',
