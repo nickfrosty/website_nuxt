@@ -2,7 +2,7 @@
 published: true
 date: 2022-03-09 00:00 EST
 updatedAt: false
-title: '24 things I learned the deploying to Vercel'
+title: '24 things I learned deploying to Vercel'
 intro: 'A mix of good, and less than good, things I learned while deploying a project to Vercel for the first time. Mostly good, but some...weird ones...'
 description: ''
 hero_image: /media/articles/vercel/vercel-the-first-time-thumb.jpg
