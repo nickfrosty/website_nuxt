@@ -6,7 +6,7 @@ title: '24 things I learned deploying to Vercel'
 intro: 'A mix of good, and less than good, things I learned while deploying a project to Vercel for the first time. Mostly good, but some...weird ones...'
 description: ''
 hero_image: /media/articles/vercel/vercel-the-first-time-thumb.jpg
-social_image: /media/articles/vercel/vercel-the-first-time.jpg
+# social_image: /media/articles/vercel/vercel-the-first-time.jpg
 category: dev
 tags: vercel, devops, nuxt, prisma
 ---
