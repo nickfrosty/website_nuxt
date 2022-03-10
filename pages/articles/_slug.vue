@@ -73,7 +73,7 @@ export default {
             let image = this.post.hero_image || this.post.image;
             if (!image) return false;
             // remove '/static/' from the path
-            if (image.substring(0, 8) != "/static/") image = image.substring(7);
+            if (image.substring(0, 8) == "/static/") image = image.substring(7);
             // force add '/media/' if not already there
             if (image.substring(0, 7) != "/media/") image = `/media/${image}`;
             return image;
@@ -82,7 +82,7 @@ export default {
             let image = this.post.social_image || this.image;
             if (!image) return false;
             // remove '/static/' from the path
-            if (image.substring(0, 8) != "/static/") image = image.substring(7);
+            if (image.substring(0, 8) == "/static/") image = image.substring(7);
             // force add '/media/' if not already there
             if (image.substring(0, 7) != "/media/") image = `/media/${image}`;
             return image;
