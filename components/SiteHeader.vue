@@ -2,7 +2,7 @@
     <section>
         <nav
             id="navigation"
-            class="absolute top-0 z-30 flex flex-row justify-center w-full text-lg font-bold text-indigo-500  md:justify-end"
+            class="absolute top-0 z-30 flex flex-row justify-center w-full overflow-hidden text-lg font-bold text-indigo-500  md:justify-end"
         >
             <ul class="flex flex-row px-6 py-2 mt-0">
                 <li>

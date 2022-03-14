@@ -274,7 +274,11 @@ If you are not familiar with Prisma JS, here is a quick snapshot of how it works
 - you define your database schema in your `prisma.schema`
 - create a "migration" file of each database change (allowing you to track database changes via git)
 - after a migration, you need to "generate" a new "PrismaClient" (basically just a fancy type-safe adapter for your database)
-- you can make database calls like this: `const user = await prisma.user.findUnique({where: {id:1} });`
+- you can make database calls like this: 
+
+```js
+const user = await prisma.user.findUnique({where: {id:1} });
+```
 
 Prisma is super great to use. But...
 

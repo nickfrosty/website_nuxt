@@ -1,5 +1,7 @@
 .article,
 .content {
+  @apply break-words;
+
   a {
     @apply font-semibold underline;
   }
