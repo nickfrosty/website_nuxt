@@ -47,9 +47,11 @@ const utils = {
     tagSpliter( tags, delimiter = ',' ){
         tags = typeof tags == 'string' ? tags.split(delimiter) : tags;
         
-        if ( typeof tags == 'object' )
+        if ( typeof tags == 'object' ){
             tags = tags.map( (item) => { return item.trim() });
-
+            tags = tags.filter((item) => item);
+        }
+        
         return tags;
     }
 }
