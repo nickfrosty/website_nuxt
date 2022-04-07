@@ -1,6 +1,6 @@
 <template>
     <footer
-        class="w-full pb-8 mt-5 mb-2 overflow-hidden text-center text-gray-600  dark:text-gray-500 text-md"
+        class="w-full pt-5 pb-8 mt-5 mb-2 overflow-hidden text-center text-gray-600  dark:text-gray-500 text-md"
     >
         <div
             id="footer-divider"
