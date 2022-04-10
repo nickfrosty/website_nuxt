@@ -25,6 +25,7 @@
                 <a
                     href="https://twitter.com/nickfrosty"
                     aria-label="@nickfrosty on Twitter"
+                    title="@nickfrosty on Twitter"
                     target="_blank"
                     class="no-underline hover:text-blue-500"
                 >
@@ -49,6 +50,7 @@
                 <a
                     href="https://youtube.com/nickfrosty"
                     aria-label="Nick Frostbutter on YouTube"
+                    title="Nick Frostbutter on YouTube"
                     target="_blank"
                     class="no-underline hover:text-red-600"
                 >
@@ -73,6 +75,7 @@
                 <a
                     href="https://indiehackers.com/nickfrosty"
                     aria-label="@nickfrosty on IndieHackers"
+                    title="@nickfrosty on IndieHackers"
                     target="_blank"
                     class="no-underline hover:text-white"
                 >
@@ -124,6 +127,7 @@
                 <a
                     href="https://github.com/nickfrosty"
                     aria-label="@nickfrosty on GitHub"
+                    title="@nickfrosty on GitHub"
                     target="_blank"
                     class="no-underline  hover:text-gray-800 dark:hover:text-white"
                 >

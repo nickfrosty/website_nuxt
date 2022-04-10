@@ -20,14 +20,14 @@
                     Hi! I'm Nick,
                 </span>
                 <br class="lg:hidden" />
-                an indie developer working on interesting
+                an indie developer and submariner working on interesting
                 <nuxt-link to="/projects" class="underline link"
                     >projects</nuxt-link
-                >. Including writing code,
+                >. Including writing code, building in my workshop,
                 <nuxt-link to="/blog" class="underline link">blogging</nuxt-link
                 >, and
                 <nuxt-link to="/articles" class="underline link"
-                    >writing useful dev articles</nuxt-link
+                    >writing dev articles</nuxt-link
                 >.
             </p>
 
@@ -40,16 +40,17 @@
             <ul
                 class="col-span-2 space-y-5 text-lg font-medium text-center  md:mt-10 xl:mt-14 lg:text-left"
             >
-                <li class="">
-                    <!-- <nuxt-link to="/about" class="link">
+                <!-- <li class="">
+                    <nuxt-link to="/about" class="link">
                     Learn more about me →
-                </nuxt-link> -->
-                </li>
-                <li class="">
-                    Checkout the
-                    <nuxt-link to="/uses" class="link">gear I use</nuxt-link> on
-                    the regular
-                </li>
+                </nuxt-link>
+                </li> -->
+                <li class="">I use Vue.js, Nuxt, and Node.js.</li>
+                <!-- <li class="">
+                    You can see more
+                    <nuxt-link to="/uses" class="link">tech I use</nuxt-link>
+                    on the regular.
+                </li> -->
                 <!-- <li class="">
                     Bullish on Solana:
                     <nuxt-link to="/uses" class="link"
@@ -57,7 +58,7 @@
                     >
                 </li> -->
                 <li class="">
-                    PS: I have lots of
+                    I really like domain names and I have lots of
                     <nuxt-link to="/domains" class="link"
                         >domains for sale</nuxt-link
                     >. Want one?

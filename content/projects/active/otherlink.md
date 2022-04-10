@@ -5,11 +5,11 @@ status: active
 name: 'other.link'
 slug: otherlink
 url: https://other.link
-timeperiod: 'current'
+timeperiod: 'Jan 2022 - current'
 sortDate: 2022-01-01
-description: 'Alternative short link manager for creators'
+description: 'Short link manager with simple analytics'
 intro: 'Short link manager for creators'
-# logo: '/media/projects/otherlink/other.svg'
+logo: '/media/projects/otherlink/otherlink.svg' 
 hero_image: '/media/projects/otherlink/header.png'
 ---
 

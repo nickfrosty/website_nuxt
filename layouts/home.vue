@@ -10,7 +10,7 @@
             <nuxt />
         </main>
 
-        <newsletter-signup-form class="px-6 py-12 mx-auto" />
+        <!-- <newsletter-signup-form class="px-6 py-12 mx-auto" /> -->
     </div>
 </template>
 
