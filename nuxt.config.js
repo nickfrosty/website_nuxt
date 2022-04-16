@@ -117,12 +117,13 @@ export default {
 		// social defaults
 		author: 'Nick Frostbutter',
 		twitter: {
+			// title: '{{og:description}}',
 			site: '@nickfrosty',
 			creator: '@nickfrosty',
 			// card: 'summary_large_image',
 			card: 'summary',
 		},
-		url: '',
+		// url: '',
 		openGraph: {
 			// title: '',
 			// type: '',

@@ -129,9 +129,9 @@ export default {
     },
     head() {
         return this.$seo({
-            // name: 'Name app',
-            title: "Nick Frostbutter",
-            templateTitle: "%title%",
+            name: "Nick Frostbutter",
+            // title: "Nick Frostbutter",
+            templateTitle: "%name%",
             // description: '',
             // canonical: '',
             // twitter: {

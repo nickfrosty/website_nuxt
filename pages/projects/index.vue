@@ -11,17 +11,7 @@
 
         <section
             v-if="active_projects"
-            class="
-                grid
-                max-w-5xl
-                grid-cols-1
-                gap-5
-                mx-auto
-                mt-4
-                mb-3
-                md:grid-cols-2
-                sm:mt-8
-            "
+            class="grid max-w-5xl grid-cols-1 gap-5 mx-auto mt-4 mb-3  md:grid-cols-2 sm:mt-8"
         >
             <div
                 v-for="project in active_projects"
@@ -49,17 +39,7 @@
 
         <section
             v-if="projects"
-            class="
-                grid
-                max-w-2xl
-                grid-cols-1
-                gap-5
-                mx-auto
-                mt-4
-                mb-3
-                space-y-2
-                sm:mt-8
-            "
+            class="grid max-w-2xl grid-cols-1 gap-5 mx-auto mt-4 mb-3 space-y-2  sm:mt-8"
         >
             <div v-for="project in projects" :key="project.name">
                 <project-card :project="project" />
