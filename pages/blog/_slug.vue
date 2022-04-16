@@ -103,9 +103,8 @@ export default {
             canonical: this.post.canonical || "auto",
             openGraph: {
                 image: {
-                    url:
-                        `https://frostbutter.com` +
-                        (this.post.image || "/img/nick.jpg"),
+                    url: `https://frostbutter.com` + "/img/nick.jpg",
+                    // (this.post.image || "/img/nick.jpg"),
                 },
             },
             twitter: {
