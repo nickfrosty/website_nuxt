@@ -59,7 +59,7 @@ export default {
 	buildModules: [
 		// https://go.nuxtjs.dev/tailwindcss
 		'@nuxtjs/tailwindcss',
-		'nuxt-webpack-optimisations',
+		// 'nuxt-webpack-optimisations',
 	],
 	
 	webpackOptimisations: {
