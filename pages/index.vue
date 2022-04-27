@@ -1,51 +1,120 @@
 <template>
     <section
-        class="grid items-center max-w-6xl grid-cols-1 gap-10 mx-auto mt-4  md:gap-32 sm:mt-8 lg:grid-cols-2"
+        class="
+            grid
+            items-center
+            max-w-6xl
+            grid-cols-1
+            gap-10
+            mx-auto
+            mt-4
+            md:gap-32
+            sm:mt-8
+            lg:grid-cols-2
+        "
     >
         <section
-            class="grid grid-cols-2 gap-10  sm:gap-5 md:gap-10 md:items-center lg:block"
+            class="
+                grid grid-cols-2
+                md:grid-cols-3
+                gap-10
+                sm:gap-5
+                md:gap-8 md:items-center
+                lg:block
+            "
         >
             <nuxt-link
                 to="/"
-                class="block col-span-2 mx-auto mb-5 text-center  auto-cols-auto sm:col-span-1 md:text-left"
+                class="
+                    block
+                    col-span-2
+                    mx-auto
+                    mb-5
+                    text-center
+                    auto-cols-auto
+                    sm:col-span-1
+                    md:text-left
+                "
             >
                 <img
-                    class="border border-gray-300 rounded-full shadow  w-60 h-60 lg:w-32 lg:h-32"
+                    class="
+                        border border-gray-300
+                        rounded-full
+                        shadow
+                        w-60
+                        h-60
+                        md:w-48 md:h-48
+                        lg:w-32 lg:h-32
+                    "
                     src="/img/nick.jpg"
                 />
             </nuxt-link>
 
-            <p class="col-span-2 text-2xl font-medium sm:col-span-1">
+            <p class="col-span-2 text-xl sm:text-2xl font-medium sm:col-span-2">
                 <span class="inline-block mb-5 text-3xl lg:mb-0 lg:text-2xl">
                     Hi! I'm Nick,
                 </span>
                 <br class="lg:hidden" />
-                an indie developer and submariner working on interesting
-                <nuxt-link to="/projects" class="underline link"
-                    >projects</nuxt-link
-                >. Including writing code, building in my workshop,
-                <nuxt-link to="/blog" class="underline link">blogging</nuxt-link
-                >, and
-                <nuxt-link to="/articles" class="underline link"
-                    >writing dev articles</nuxt-link
+                a
+                <a
+                    href="https://github.com/nickfrosty"
+                    target="_blank"
+                    class="underline link"
+                    title="@nickfrosty on GitHub"
+                    >developer</a
+                >
+                and submariner.
+                <br />
+                In my free time, I work on multiple
+                <br class="hidden md:block" />
+                <nuxt-link
+                    to="/projects"
+                    class="underline link"
+                    title="View a list of my projects"
+                    >side projects</nuxt-link
+                >
+                and my
+                <nuxt-link
+                    to="/articles"
+                    class="underline link"
+                    title="View my technical articles"
+                    >technical writing</nuxt-link
                 >.
             </p>
 
             <div
-                class="col-span-2 mt-5 space-x-5 text-center  md:mt-10 lg:mt-5 lg:text-left"
+                class="
+                    col-span-3
+                    mt-5
+                    space-x-5
+                    text-center
+                    md:mt-10
+                    lg:mt-5 lg:text-left
+                "
             >
                 <social-icons></social-icons>
             </div>
 
             <ul
-                class="col-span-2 space-y-5 text-lg font-medium text-center  md:mt-10 xl:mt-14 lg:text-left"
+                class="
+                    col-span-2
+                    space-y-5
+                    text-lg
+                    font-medium
+                    text-center
+                    md:mt-10
+                    xl:mt-14
+                    lg:text-left
+                "
             >
                 <!-- <li class="">
                     <nuxt-link to="/about" class="link">
                     Learn more about me →
                 </nuxt-link>
                 </li> -->
-                <li class="">I use Vue.js, Nuxt, and Node.js.</li>
+                <li class="">
+                    I write Vue.js, NuxtJS, and Node.js on a daily basis.
+                </li>
                 <!-- <li class="">
                     You can see more
                     <nuxt-link to="/uses" class="link">tech I use</nuxt-link>
@@ -57,12 +126,12 @@
                         >nickfrosty.sol</nuxt-link
                     >
                 </li> -->
-                <li class="">
+                <!-- <li class="">
                     I really like domain names and I have lots of
                     <nuxt-link to="/domains" class="link"
                         >domains for sale</nuxt-link
                     >. Want one?
-                </li>
+                </li> -->
             </ul>
         </section>
 
@@ -76,7 +145,14 @@
                 </h2>
 
                 <div
-                    class="grid grid-cols-1 gap-4 mb-3 space-y-3  lg:block md:grid-cols-2"
+                    class="
+                        grid grid-cols-1
+                        gap-4
+                        mb-3
+                        space-y-3
+                        lg:block
+                        md:grid-cols-2
+                    "
                 >
                     <div
                         v-for="project in active_projects.slice(0, 3)"

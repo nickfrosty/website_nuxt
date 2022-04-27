@@ -10,7 +10,21 @@
             </a>
             <div class="flex justify-between flex-grow">
                 <div class="block items-center">
+                    <nuxt-link
+                        v-if="isLocalPage"
+                        :to="project.url"
+                        class="
+                            text-2xl
+                            font-bold
+                            text-gray-700
+                            dark:text-gray-300
+                            hover:text-hot-pink
+                            link
+                        "
+                        >{{ project.name }}</nuxt-link
+                    >
                     <a
+                        v-else
                         :href="project.url"
                         target="_blank"
                         class="
@@ -42,8 +56,8 @@ export default {
         project: Object,
     },
     computed: {
-        logo() {
-            let logo = this.project.hero_logo || this.project.logo;
+        logo({ project }) {
+            let logo = project.hero_logo || project.logo;
             if (!logo) return false;
             // remove '/static/' from the path
             if (logo.substring(0, 8) != "/static/") logo = logo.substring(7);
@@ -51,8 +65,11 @@ export default {
             if (logo.substring(0, 7) != "/media/") logo = `/media/${logo}`;
             return logo;
         },
-        statusClass() {
-            return this.project.status;
+        statusClass({ project }) {
+            return project.status;
+        },
+        isLocalPage({ project }) {
+            return project.url.substring(0, 1) == "/" ? true : false;
         },
     },
     data() {
@@ -78,7 +95,8 @@ export default {
 .status.active {
     @apply text-gray-900 bg-green-200;
 }
-.status.autopilot {
+.status.autopilot,
+.status.opensource {
     @apply text-gray-900 bg-purple-200;
 }
 .status.backburner {

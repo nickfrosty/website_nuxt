@@ -3,6 +3,7 @@
         <a
             href="https://twitter.com/nickfrosty"
             class="icon hover:text-blue-500"
+            title="@nickfrosty on Twitter"
             aria-label="@nickfrosty on Twitter"
             target="_blank"
             rel="noopener"
@@ -34,6 +35,7 @@
         <a
             href="https://github.com/nickfrosty"
             class="icon"
+            title="@nickfrosty on GitHub"
             aria-label="@nickfrosty on GitHub"
             target="_blank"
             rel="noopener"
@@ -66,6 +68,7 @@
         <a
             href="https://youtube.com/nickfrosty"
             class="icon hover:text-red-500"
+            title="Nick Frostbutter on YouTube"
             aria-label="Nick Frostbutter on YouTube"
             target="_blank"
             rel="noopener"
@@ -97,6 +100,7 @@
         <a
             href="https://indiehackers.com/nickfrosty"
             class="icon"
+            title="@nickfrosty on IndieHackers"
             aria-label="@nickfrosty on IndieHackers"
             target="_blank"
             rel="noopener"
@@ -143,7 +147,12 @@
             </svg>
         </a>
 
-        <nuxt-link to="/newsletter" class="icon" aria-label="Newsletter">
+        <nuxt-link
+            to="/newsletter"
+            class="icon"
+            title="Personal Newsletter"
+            aria-label="Personal Newsletter"
+        >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.1"
