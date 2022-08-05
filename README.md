@@ -24,11 +24,11 @@ If you don't know, you can run these 3 commands on this repo to build the site l
 
 ```bash
 # install dependencies
-$ npm install
+yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+yarn dev
 
 # generate static project
-$ npm run generate
+yarn generate
 ```
