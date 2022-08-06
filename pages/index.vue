@@ -35,7 +35,7 @@
           title="View a list of my projects"
           >projects</nuxt-link
         >
-        and work on
+        and do
         <nuxt-link
           to="/articles"
           class="link underline"
