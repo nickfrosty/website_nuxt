@@ -1,22 +1,22 @@
 <template>
   <section
-    class="grid grid-cols-1 gap-10 items-center mx-auto mt-4 max-w-6xl md:gap-32 sm:mt-8 lg:grid-cols-2"
+    class="md:gap-32 sm:mt-8 lg:grid-cols-2 grid grid-cols-1 gap-10 items-center mx-auto mt-4 max-w-6xl"
   >
     <section
-      class="grid grid-cols-2 gap-10 md:grid-cols-3 sm:gap-5 md:gap-8 md:items-center lg:block"
+      class="md:grid-cols-3 sm:gap-5 md:gap-8 md:items-center lg:block grid grid-cols-2 gap-10"
     >
       <nuxt-link
         to="/"
-        class="block col-span-2 auto-cols-auto mx-auto mb-5 text-center sm:col-span-1 md:text-left"
+        class="sm:col-span-1 md:text-left block col-span-2 auto-cols-auto mx-auto mb-5 text-center"
       >
         <img
-          class="w-60 h-60 rounded-full border border-gray-300 shadow md:w-48 md:h-48 lg:w-32 lg:h-32"
+          class="md:w-48 md:h-48 lg:w-32 lg:h-32 w-60 h-60 rounded-full border border-gray-500 shadow"
           src="/img/nick.jpg"
         />
       </nuxt-link>
 
-      <p class="col-span-2 text-2xl font-medium sm:text-2xl sm:col-span-2">
-        <span class="inline-block mb-5 text-3xl lg:mb-0 lg:text-2xl">
+      <p class="sm:text-2xl sm:col-span-2 col-span-2 text-2xl font-medium">
+        <span class="lg:mb-0 lg:text-2xl inline-block mb-5 text-3xl">
           Hi! I'm Nick,
         </span>
         <br class="lg:hidden" />
@@ -24,49 +24,52 @@
         <a
           href="https://github.com/nickfrosty"
           target="_blank"
-          class="underline link"
+          class="link underline"
           title="@nickfrosty on GitHub"
           >full stack developer</a
         >
-        and submarine veteran. In my free time, I build
+        and submarine veteran. In my free time, I build software
         <nuxt-link
           to="/projects"
-          class="underline link"
+          class="link underline"
           title="View a list of my projects"
           >projects</nuxt-link
         >
-        and practice
+        and work on
         <nuxt-link
           to="/articles"
-          class="underline link"
+          class="link underline"
           title="View my technical articles"
           >technical writing</nuxt-link
         >.
       </p>
 
       <div
-        class="col-span-3 mt-5 space-x-5 text-center md:mt-10 lg:mt-5 lg:text-left"
+        class="md:mt-10 lg:mt-5 lg:text-left col-span-3 mt-5 space-x-5 text-center"
       >
         <social-icons></social-icons>
       </div>
 
-      <!-- <p
-        class="col-span-2 space-y-5 text-lg font-medium text-center md:mt-10 xl:mt-14 lg:text-left"
+      <p
+        class="md:mt-10 xl:mt-14 lg:text-left col-span-2 space-y-5 text-lg font-medium text-center"
       >
-        I specialize in NuxtJS and Node.js.
-      </p> -->
+        Here, you can find
+        <nuxt-link to="/now" class="link underline"
+          >what I am working on now</nuxt-link
+        >.
+      </p>
     </section>
 
-    <section class="grid gap-8 xl:gap-12">
-      <div class="order-2 md:order-1" v-if="active_projects">
-        <hr class="mb-14 md:hidden" />
+    <section class="xl:gap-12 grid gap-8">
+      <div class="md:order-1 order-2" v-if="active_projects">
+        <hr class="md:hidden mb-14" />
 
-        <h2 class="my-10 text-3xl font-bold text-center lg:hidden">
+        <h2 class="lg:hidden my-10 text-3xl font-bold text-center">
           My Current Projects
         </h2>
 
         <div
-          class="grid grid-cols-1 gap-4 mb-3 space-y-3 lg:block md:grid-cols-2"
+          class="lg:block md:grid-cols-2 grid grid-cols-1 gap-4 mb-3 space-y-3"
         >
           <div
             v-for="project in active_projects.slice(0, 3)"
@@ -76,7 +79,7 @@
           </div>
         </div>
 
-        <nuxt-link to="/projects" class="block ml-10 text-lg font-medium link"
+        <nuxt-link to="/projects" class="link block ml-10 text-lg font-medium"
           >View more projects →</nuxt-link
         >
       </div>

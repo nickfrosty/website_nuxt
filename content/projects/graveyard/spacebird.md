@@ -1,20 +1,20 @@
 ---
 published: true
 status: opensource
-name: 'Spacebird'
-slug: 'spacebird'
+name: "Spacebird"
+slug: "spacebird"
 url: /projects/spacebird/
-timeperiod: 'Nov 2021 - Jan 2022'
+timeperiod: "Nov 2021 - Jan 2022"
 sortDate: 2021-11-15
-description: 'the first Twitter Spaces search engine'
-intro: 'The very first public Twitter Spaces search engine. Helping the early adopters of Twitter Spaces to explore active and scheduled Spaces.'
-logo: '/media/projects/spacebird/spacebird.png'
-hero_image: '/media/projects/spacebird/header.png'
+description: "the first Twitter Spaces search engine"
+intro: "The very first public Twitter Spaces search engine. Helping the early adopters of Twitter Spaces to explore active and scheduled Spaces."
+logo: "/media/projects/spacebird/spacebird.png"
+hero_image: "/media/projects/spacebird/header.png"
 ---
 
 ## The problem
 
-For several months after Twitter released *Spaces*, their live audio chatroom product, there was no way to search for them. 
+For several months after Twitter released _Spaces_, their live audio chatroom product, there was no way to search for them.
 
 Either active ones or scheduled.
 
@@ -33,6 +33,6 @@ Spacebird was created to bridge the gap of what Twitter was seemingly slow to ro
 
 This project/repo is no longer maintained and has been open sourced.
 
-After Twitter released their public Spaces search, directly in the app/website, Spacebird was shutdown. In early 2022, the original domain, Spacebird.io, was sold at auction. 
+After Twitter released their public Spaces search, directly in the app/website, Spacebird was shutdown. In early 2022, the original domain, Spacebird.io, was sold at auction.
 
 I have made the [git repo public](https://github.com/nickfrosty/spacebird) and can be used by anyone.

@@ -5,7 +5,7 @@ status: autopilot
 name: "Boomerang.link"
 slug: boomerang
 url: https://boomerang.link
-timeperiod: "Oct 2021 - current"
+timeperiod: "Oct 2021 - Jan 2022"
 sortDate: 2021-12-01
 description: "Bookmark manager with bookmark reminders built in"
 intro: "Bookmark reminders made easy"
