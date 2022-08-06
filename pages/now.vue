@@ -33,7 +33,7 @@
         <br class="md:hidden" />
         Let's chat:
         <a
-          href="https://linkedin.com/user/nick-frostbutter"
+          href="https://linkedin.com/in/nickfrostbutter"
           target="_blank"
           class="font-normal underline"
           >LinkedIn</a
